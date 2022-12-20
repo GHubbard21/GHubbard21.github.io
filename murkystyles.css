@@ -1,5 +1,51 @@
 body{
-    margin: 0;
+
     background: skyblue;
+}
+
+h1{
     text-align: center;
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+.intro{
+    text-align: center;
+    position: relative;
+    padding: 25px;
+}
+
+footer{
+    text-align: center;
+    font-family:Garamond;
+}
+
+.art{
+    background-color: floralwhite;
+    width: 100%;
+    height: 150;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.images{
+
+}
+
+.music{
+
+}
+
+.navigate{
+
+}
+
+
+.fa-instagram{
+    background: red;
+    color: white;
+    size: 50px;
 }
