@@ -3,6 +3,11 @@ body{
     background: skyblue;
 }
 
+
+p{
+    font-family: Garamond;
+    font-weight: bold;
+}
 h1{
     text-align: center;
     color: black;
@@ -35,11 +40,11 @@ footer{
 }
 
 .images{
-
+    text-align: center;
 }
 
 .music{
-
+    text-align: center;
 }
 
 .navigate{
