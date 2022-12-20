@@ -29,15 +29,19 @@
 <div class="intro"> 
     <p>trapped at daybreak, released at sundown</p>
     <p>slipaway and start dreaming... &#127769;</p>
-    <p>all works mixed by g...&#128373;</p>
+    
 </div>
 
 <br>
 
 
 <div class="art" id="#art">
-    <p> made by yours truly</p>
-   <!--  <a href="www.google.com"> google</a>-->
+    <h2>art...&#127912;</h2>
+    <p>all works mixed by g...&#128373;</p>
+    <img class="artPics"  src="Assets/loveme.png"  width=" 400px" title="love me">
+    <img class="artPics"  src="Assets/error404.png"  width=" 400px" title="error404">
+    <img class="artPics"  src="Assets/Surveillance.png"  width=" 400px" title="surveillance">
+    
 </div>
 
 
@@ -74,8 +78,27 @@
     <p> or go back to reality... <a href="ghubbard21.github.io">awake</a></p>
 </footer>
 
-<a href="https://www.instagram.com/" class="fa fa-instagram"> </a>
+<a href="https://www.instagram.com/murkygleam/" class="fa fa-instagram"> </a>
 
+
+<script>
+    var imgIndex = 0;
+    move();
+
+    function move() {
+        var i;
+        var x = document.getElementsByClassName("artPics");
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        imgIndex++;
+        if(imgIndex > x.length){
+            imgIndex = 1;
+        }
+        x[imgIndex - 1].style.display = "block";
+        setTimeout(move,4000);
+    }
+</script>
 
 
 </body>
