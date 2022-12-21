@@ -1,9 +1,40 @@
 body{
     margin: 0;
-    background: purple;
+    background: whitesmoke;
     text-align: center;
 }
 h1{
-    font-size: small;
+   
 }
-    
+
+
+
+.button{
+    background-color: azure;
+    border-radius: 6px;
+}
+
+
+.aboutMe{
+    text-align: left;
+}
+
+.project{
+
+}
+
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-instagram{
+    background: red;
+    color: white;
+    size: 1250px;
+}
