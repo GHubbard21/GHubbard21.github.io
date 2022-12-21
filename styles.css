@@ -1,5 +1,9 @@
 body{
     margin: 0;
-    background: pink;
+    background: purple;
     text-align: center;
 }
+h1{
+    font-size: small;
+}
+    
