@@ -39,6 +39,10 @@ footer{
     margin-right: auto;
 }
 
+.sports{
+    text-align: center;
+}
+
 .images{
     text-align: center;
 }
@@ -46,6 +50,11 @@ footer{
 .music{
     text-align: center;
 }
+
+.tv{
+    text-align: center;
+}
+
 
 .navigate{
 
