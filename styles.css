@@ -7,7 +7,9 @@ h1{
    
 }
 
+.footer{
 
+}
 
 .button{
     background-color: azure;
@@ -24,17 +26,42 @@ h1{
 }
 
 
+.contact{
+    text-align: center;
+}
+
+
 .fa{
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
-    width: 50px;
+    width: 25px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
 }
 
+
 .fa-instagram{
-    background: red;
-    color: white;
-    size: 1250px;
+    color: #E4405F;
+    opacity: 1.0;
+}
+.fa-instagram:hover{
+    opacity: 0.7;
+}
+
+.fa-github{
+    opacity: 1.0;
+}
+.fa-github:hover {
+    opacity: 0.5;
+}
+
+.fa-twitter{
+    color: #00ACEE ;
+    opacity: 1.0;
+}
+
+.fa-twitter:hover{
+    opacity: 0.7;
+    color: #00ACEE;
 }
