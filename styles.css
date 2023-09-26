@@ -124,7 +124,7 @@ hr{
 }
 
 .fa-github{
-    color: #4183C4;
+    color: #0e0f0e;
     opacity: 1.0;
 }
 .fa-github:hover {
@@ -132,11 +132,18 @@ hr{
 }
 
 .fa-twitter{
-    color: #00ACEE ;
+    color: #044efb ;
     opacity: 1.0;
 }
 
 .fa-twitter:hover{
     opacity: 0.7;
-    color: #00ACEE;
+}
+
+.fa-linkedin-square{
+    opacity: 1.0;
+}
+
+.fa-linkedin-square:hover{
+    opacity: 0.7;
 }
