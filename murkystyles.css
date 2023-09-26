@@ -1,0 +1,68 @@
+body{
+
+    background: skyblue;
+}
+
+
+p{
+    font-family: Garamond;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+
+h2{
+    text-align: center;
+}
+.intro{
+    text-align: center;
+    position: relative;
+    padding: 25px;
+}
+
+footer{
+    text-align: center;
+    font-family:Garamond;
+}
+
+.art{
+    text-align: center;
+}
+
+.artpics{
+    border-style: solid;
+    border-color: skyblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sports{
+    text-align: center;
+}
+
+.images{
+    text-align: center;
+}
+
+.music{
+    text-align: center;
+}
+
+.tv{
+    text-align: center;
+}
+
+
+.navigate{
+
+}
+
+
+.fa-instagram{
+    background: red;
+    color: white;
+    size: 50px;
+}

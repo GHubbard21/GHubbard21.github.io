@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>murkygleam</title>
+    <link rel="stylesheet" href="murkystyles.css">
+    <link rel="icon" href="Assets/skyyyyyy.jpg">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <h1>murkygleam</h1>
+    <h1>ɯɐǝlƃʎʞɹnɯ</h1>
+
+    <div class="navigate"> 
+        <h2 class="navigate">
+            <a href="#about">About</a>
+            <br>
+            <a href="#art"> art</a>
+            <a href="#pics"> pics</a>
+            <a href="#sports"> sports</a>
+            <a href="#tunes"> tunes</a>
+            <a href="#scenes"> scenes</a>
+        </h2>
+    </div>
+
+
+<div class="intro"> 
+    <p>trapped at daybreak, released at sundown</p>
+    <p>slipaway and start dreaming... &#127769;</p>
+    
+</div>
+
+<br>
+
+
+<div class="art" id="#art">
+    <h2>art...&#127912;</h2>
+    <p>all works mixed by g...&#128373;</p>
+    <img class="artPics"  src="Assets/loveme.png"  width=" 400px" title="love me">
+    <img class="artPics"  src="Assets/error404.png"  width=" 400px" title="error404">
+    <img class="artPics"  src="Assets/Surveillance.png"  width=" 400px" title="surveillance">
+    
+    <p> 
+        <a href="https://www.instagram.com/murkygleam/">dive deeper...</a>
+    </p>
+    
+</div>
+
+
+<br>
+
+<div class="images" id="pics">
+    <h2>pics... &#128247;</h2>
+    <p>a catalog of lovely pics...&#128151;</p>
+
+</div>
+
+<br>
+
+<div class="sports" id="sports">
+    <h2>sports...&#129338;</h2>
+    <p>the beautiful game and so much more...&#9917;</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL1z5j7fdEO247Dkqhr6Exzxp5DKqB0ecU" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="music" id="tunes">
+    <h2>tunes...&#128189;</h2>
+    <p>a curated radio station updated every friday...&#128251;</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3jJ8L6gcRYxYw66XEVJBhr?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<div class="tv" id="scenes">
+    <h2>scenes...&#128250;</h2>
+    <p>lovely shots from lovely films...&#127909;</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL1z5j7fdEO24QoSJD3u8SZpNeS-IbIPV5" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br>
+
+<footer id="about">
+    <h2> About</h2>
+    <p>a place to let your mind wander or be inspired...&#128173; </p>
+    <p>share this website or keep it a secret, you're the one that holds the key...&#127756; </p>
+    <p>stay here as long as you like... &#8987;</p>
+    <p> or go back to reality... <a href="ghubbard21.github.io">awake</a></p>
+</footer>
+
+<a href="https://www.instagram.com/murkygleam/" class="fa fa-instagram"> </a>
+
+
+<script>
+    var imgIndex = 0;
+    move();
+
+    function move() {
+        var i;
+        var x = document.getElementsByClassName("artPics");
+        for(i = 0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        imgIndex++;
+        if(imgIndex > x.length){
+            imgIndex = 1;
+        }
+        x[imgIndex - 1].style.display = "block";
+        setTimeout(move,4000);
+    }
+</script>
+
+
+</body>
+</html>
