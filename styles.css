@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background: whitesmoke;
+   /* background: whitesmoke;*/
+   background-image: linear-gradient(#1c1cb0, #00d4ff);
     text-align: center;
 }
 h1{
@@ -19,9 +20,10 @@ h4{
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    background-color: #333;
+    /*background-color: #333; */
 }
 
 li{
@@ -37,8 +39,8 @@ li a{
 }
 
 li a:hover{
-  /*  background-color: #111; */
-  background-color: red;
+  /*  background-color: #111; 
+  background-color: #e1eaec;*/
 }
 
 
@@ -53,9 +55,25 @@ hr{
 
 .button{
     background-color: azure;
-    border-radius: 6px;
+    border: black;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
+.artPics{
+    margin: 0 auto;
+}
+
+#artPics > img {
+    float: left;
+    border: 2px solid black;
+    width: 45%;
+    margin: 1.66%;
+    
+}
 
 .aboutMe{
     text-align: center;
