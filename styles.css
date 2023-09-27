@@ -4,15 +4,30 @@ body{
    background-image: linear-gradient(#1c1cb0, #00d4ff);
     text-align: center;
 }
+
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: black;
+}
+
 h1{
-   
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    padding: 0px;
+    margin: 0px;
 }
 
 h3{
-    /** text-align: left;
-    margin-left: 50px; */
+    font-family: 'Playfair Display', serif;
 }
 h4{
+    font-family: 'Playfair Display', serif;
     text-align: left;
     margin-left: 50px;
 }
@@ -25,6 +40,7 @@ ul{
     overflow: hidden;
     /*background-color: #333; */
 }
+
 
 li{
     float: left;
@@ -39,8 +55,7 @@ li a{
 }
 
 li a:hover{
-  /*  background-color: #111; 
-  background-color: #e1eaec;*/
+  background-color: #2323dc; 
 }
 
 
@@ -54,11 +69,24 @@ hr{
 }
 
 .button{
+    font-family: 'Playfair Display', serif;
     background-color: azure;
     border: black;
     padding: 15px;
     border-radius: 12px;
     font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2{
+    font-family: 'Playfair Display', serif;
+    background-color: #0f079c;
+    border: black;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: azure;
     text-align: center;
     text-decoration: none;
 }
