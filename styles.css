@@ -1,7 +1,6 @@
 body{
     margin: 0;
-   /* background: whitesmoke;*/
-   background-image: linear-gradient(#1c1cb0, #00d4ff);
+    background-image: linear-gradient(#1c1cb0, #00d4ff);
     text-align: center;
 }
 
@@ -32,6 +31,11 @@ h4{
     margin-left: 50px;
 }
 
+
+a{
+    color: black;
+    text-decoration: none;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -162,6 +166,7 @@ hr{
 .fa-instagram{
     color: #E4405F;
     opacity: 1.0;
+    text-decoration: none;
 }
 .fa-instagram:hover{
     opacity: 0.7;
@@ -170,6 +175,7 @@ hr{
 .fa-github{
     color: #0e0f0e;
     opacity: 1.0;
+    text-decoration: none;
 }
 .fa-github:hover {
     opacity: 0.5;
@@ -178,6 +184,7 @@ hr{
 .fa-twitter{
     color: #044efb ;
     opacity: 1.0;
+    text-decoration: none;
 }
 
 .fa-twitter:hover{
@@ -186,6 +193,7 @@ hr{
 
 .fa-linkedin-square{
     opacity: 1.0;
+    text-decoration: none;
 }
 
 .fa-linkedin-square:hover{
