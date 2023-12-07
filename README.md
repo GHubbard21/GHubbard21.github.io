@@ -1,5 +1,5 @@
 # GHubbard21.github.io
 
-Grady Hubbard Website and Portfolio hosted by GitHub Pages
+Grady Hubbard Website and Portfolio hosted by GitHub Pages and GoDaddy
 
-Visit here https://ghubbard21.github.io/
+Visit here https://ghubbard21.xyz/
