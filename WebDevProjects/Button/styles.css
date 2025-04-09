@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+/**
+/   Dark Theme style
+*/
+.dark-theme{
+    background-color: black;
+    color: white;
+}
+
+/**
+/   Header Style
+*/
+h1 {
+    text-align: center;
+    align-items: center;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/**
+/   Runaway Button Style
+*/
+
+#runaway {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    color: white;
+    font-family: "Yatra One", system-ui;
+    font-size: 18px;
+    
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 3px 3px black;
+
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/**
+/   Animation Keyframes
+*/
+@keyframes colorChange {
+    0%   {background-color: rgb(33, 226, 217);}
+    25%  {background-color: rgb(22, 158, 212);}
+    50%  {background-color: rgb(15, 123, 165);}
+    50%  {background-color: rgb(8, 89, 182);}
+    100% {background-color: rgb(33, 226, 217);}
+}
+
+/**
+/   Taunt Message Style
+*/
+#taunt-message {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/**
+/   Secret Button Styles
+*/
+#secret{
+    top: 75%;
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 12px;
+    padding: 12px, 24px ;
+    font-family: "Yatra One", system-ui;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 3px 3px black;
+    opacity: 0%;
+}
+
+#secret:hover{
+    opacity: 100%;
+}
+
+/**
+/   Theme Button Styles
+*/
+#theme {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Yatra One", system-ui;
+    font-size: 12px;
+}
+#theme:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+
+
+

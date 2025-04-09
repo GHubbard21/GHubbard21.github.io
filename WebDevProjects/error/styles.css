@@ -1,0 +1,118 @@
+body {
+    background: black;
+   /** text-align: left; **/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "DOS";
+    font-size: 20px;
+    color: white;
+}
+
+
+/**
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20vh;
+    font-size: 20px;
+    color: #333;
+    white-space: pre-line;
+}
+**/
+
+@font-face {
+    font-family: "DOS";
+    src: url(Perfect\ DOS\ VGA\ 437\ Win.ttf);
+}
+
+@font-face {
+    font-family: "IBM";
+    src: url(Nouveau_IBM.ttf);
+}
+
+
+h1 {
+    font-size: 48px;
+    color: white;
+    align-items: center;
+}
+
+h2{
+    font-family: "IBM";
+}
+
+.errorTXT{
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    display: none;
+}
+
+p{
+    font-size: 24px;
+    text-align: left;
+}
+
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+
+button{
+    font-family: "DOS";
+    background-color: white;
+    font-size: 18px;
+
+}
+
+button:hover{
+    background-color: blue;
+}
+
+
+.square{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    display: inline-block;
+    align-content:space-around ;
+}
+
+.square2{
+    height: 25px;
+    width: 50px;
+    background-color: white;
+    display: inline-block;
+    align-content:space-around ;
+}
+
+
+.square3{
+    height: 25px;
+    width: 75px;
+    background-color: white;
+    display: inline-block;
+    align-content:space-around ;
+}
+
+.square4{
+    height: 25px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    align-content:space-around ;
+}
+
+
+
+
+
+
+
+
