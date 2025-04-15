@@ -1,0 +1,90 @@
+body{
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-theme{
+    background-color: black;
+    color: white;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.cell.clicked{
+    background-color: skyblue;
+}
+
+#rando {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+
+/**
+/   Theme Button Styles
+*/
+#theme {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 8px;
+
+    font-size: 12px;
+}
+#theme:hover{
+    background-color: rgb(184, 184, 184);
+}
