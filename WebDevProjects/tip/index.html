@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roleplay Tip Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--Calculator Div-->
+  <div class="calculatorCard">
+
+    <!--Header inside Calc-->
+    <h1>Roleplay Tip Calculator</h1>
+
+    <!--Roleplay Section and Button-->
+    <div id="roleplay">
+      <p id="role"></p>
+      <button onclick="generateRole()">🎲 New Role</button>
+    </div>
+
+    <!--Bill Amount Section-->
+    <label for="bill">Bill Amount ($)</label>
+    <input type="number" id="bill" placeholder="Enter bill amount" />
+
+    <!--Tip Percent Section-->
+    <label for="tip">Tip Percentage (%)</label>
+    <input type="number" id="tip" placeholder="Enter tip percentage" />
+
+    <!--Calculate Button Section-->
+    <button onclick="calculateTip()">Calculate</button>
+
+    <!--Final Result Section-->
+    <div id="result"></div>
+
+  </div>
+
+  <!--Change Theme Button-->
+ <!--  <button id="theme">Toggle Theme</button> -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+

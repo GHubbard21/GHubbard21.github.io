@@ -1,0 +1,51 @@
+/**
+* Import Google Font.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Workbench&display=swap');
+
+body {
+  background:#4e9f3d; 
+  font-family: 'fenix', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+  color: #fff702;
+}
+
+.countdown {
+  display: flex;
+  gap: 25px;
+}
+
+.container {
+  background: #000;
+  padding: 20px 30px;
+  border-radius: 15px;
+  width: 100px;
+  box-shadow: 0 4px 15px #0e0e0e;
+}
+
+.nums {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 35x;
+}
+
+
+.text {
+  font-size: 22px;
+  color: #fff702;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
