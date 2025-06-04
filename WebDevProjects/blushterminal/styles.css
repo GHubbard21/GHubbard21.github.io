@@ -1,0 +1,79 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color:red; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+#startTXT {
+  transition: color 2s ease-in-out;
+  color: red;
+}
+
+.txt {
+  padding-top: 50px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 24px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 90%;
+}
+
+#commandLine{
+  font-family: 'Press Start 2P', monospace;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+
+#output{
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+#inputTXT{
+  font-family: 'Press Start 2P', monospace;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  color: red;
+}
+
+.prompt {
+  font-size: 16px;
+  margin-right: 8px; /* space between prompt and input */
+}
+
+#input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: red;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  width: 100%;
+  caret-color: red;
+}
+
+#blushFade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 2s ease-in-out;
+  z-index: 999;
+}
+
+
