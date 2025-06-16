@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Password Game</title>
+    <link rel="stylesheet" href="styles.css">
+<!-- Font Link from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        
+        <!--Header Div-->
+        <h1>Snake Password Entry</h1>
+        <!--Header 2 Div-->
+        <h2>Enter the password by playing Snake</h2>
+
+        <!--Hint Div-->
+        <div id="hint"> 
+            <h3>Hint: A Game of Hss'</h3>
+        </div>
+
+        <!--Canvas Wrapper Div-->
+        <div class="canvasDiv">
+            <!--Start Button Div-->
+            <button id="startButton">Start Game</button>
+            <!--Canvas-->
+            <canvas id="gameCanvas"></canvas> 
+
+            <!--Password output Wrapper-->
+            <div id="typingPW">
+                <!--Where the Password is being typed-->
+                 <h3>PASSWORD: <span id="typedPassword"></span></h3>
+            </div>
+
+        </div>
+
+        <!--Result and Message Div-->
+         <div id="resultOverlay" class="hidden"> 
+
+            <div id="resultMessage">ACCESS GRANTED</div>
+
+            <button id="restartButton">Restart</button>
+
+         </div> 
+
+        <!--Toggle Theme Button-->
+        <button id="theme">Toggle Theme</button>
+
+        <!--Link to script-->
+        <script src="script.js" defer></script> 
+
+    </body>
+</html>

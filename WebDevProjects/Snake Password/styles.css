@@ -1,0 +1,172 @@
+/* Body Stlye */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Workbench', sans-serif;
+    color: white;
+}
+
+/* H1 Style */
+h1{
+    text-align: center;
+    align-items: center;
+    
+}
+
+/* H2 Style */
+h2{
+    text-align: center;
+    align-items: center;
+}
+
+/* Hint Div Style */
+#hint{
+    text-align: center; 
+    align-items: center;
+    font-size: 28px;
+}
+
+/* Start Button Styles */
+#startButton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    font-family: "Workbench", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: limegreen;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* Canvas Wrapper Style */
+.canvasDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Canvas Style */
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: black;
+    border: 6px solid green;
+    width: 500px;
+    height: 500px; 
+   
+}
+
+/* */
+#message {
+    margin-top: 10px;
+    font-size: 20px;
+}
+/* Light Theme Style if toggled */
+.light-theme{
+    background-color: white;
+    color: black;
+}
+/* Theme Button Styles */
+#theme {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Workbench", sans-serif;
+    font-size: 12px;
+}
+#theme:hover{
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+#resultOverlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#resultOverlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+#resultMessage {
+  font-family: "Workbench", sans-serif;
+  font-size: 32px;
+  color: white;
+  background: none;
+  padding: 20px 40px;
+ /* border: 3px solid white; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.result-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.result-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Restart Button Styles */
+#restartButton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    font-family: "Workbench", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: limegreen;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
