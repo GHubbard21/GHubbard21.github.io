@@ -1,0 +1,86 @@
+body{   
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+h3{
+    margin: 0;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
+#loadingScreen{
+    background: black;
+}
+
+
+#desktop{
+    height: 100vh;
+    width: 100vw;
+    background: #4fc6f5;
+}
+
+
+#folders{
+    top: 50px;
+    left: 175px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#folder{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#applications{
+    top: 50px;
+    left: 25px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#taskbar{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #4F73F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#start{
+    background: #1231a2;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clock{
+    background: blue;
+}
