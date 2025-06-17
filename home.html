@@ -21,7 +21,7 @@
         <!--Folders Div-->
         <div id="folders">
 
-          <div id="folder">
+          <div id="folder" onclick="openWindow()">
             <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
             <h3>About Me</h3>
           </div>
@@ -48,34 +48,22 @@
 
         </div>
 
+         <!--Openable Windows Div-->
+        <div id="aboutWindow" class="windows">
+          <div class="title">
+            <span>About Me</span>
+            <button onclick="closeWindow()"> X </button>
+          </div>
 
-        <!--Openable Windows Div-->
-        <div id="windows">
-          <div id="aboutWindow">
-            <div id="window">
-
-            </div>
+          <div class="windowContent">
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
+            <p>Test</p>
           </div>
         </div>
-
-         <!--  Openable Window 
-    <div id="aboutWindow" class="window">
-      <div class="title-bar">
-        <span>About Me</span>
-        <button onclick="closeWindow('aboutWindow')">✕</button>
-      </div>
-      <div class="window-content">
-        <p>Hello! I'm Grady Hubbard, a digital artist and designer.</p>
-        <p>I love building weird, interactive sites and glitchy art.</p>
-      </div>
-    </div>
-
--->
-
-      <!--<div class="icon" onclick="openWindow('aboutWindow')"> -->
-
-
-
+        
         <!--Applications Div-->
         <div id="applications">
           <div id="app">

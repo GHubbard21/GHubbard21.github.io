@@ -58,6 +58,44 @@ display: flex;
     cursor: pointer;
 }
 
+
+.windows{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 350px;
+    background: #eaeaea;
+    border: 2px solid #48494b;
+    box-shadow: 4px 4px #48494b;
+    /**display: none; */
+    z-index: 100;
+}
+
+.title{
+    background: #031ea2;
+    color: white;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.windowContent{
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+.title button{
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
 #taskbar{
     position: absolute;
     bottom: 0;
