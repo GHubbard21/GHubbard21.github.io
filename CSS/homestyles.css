@@ -68,7 +68,7 @@ display: flex;
     border: 2px solid #48494b;
     box-shadow: 4px 4px #48494b;
     /**display: none; */
-    z-index: 100;
+ /**   z-index: 100; */
 }
 
 .title{
@@ -119,6 +119,8 @@ display: flex;
     cursor: pointer;
 }
 
-#clock{
-    background: blue;
+#clock {
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
 }
