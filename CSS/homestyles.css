@@ -67,8 +67,8 @@ display: flex;
     background: #eaeaea;
     border: 2px solid #48494b;
     box-shadow: 4px 4px #48494b;
-    /**display: none; */
- /**   z-index: 100; */
+    display: none; 
+    z-index: 100;
 }
 
 .title{
@@ -124,3 +124,33 @@ display: flex;
     font-size: 18px;
     padding: 0 20px;
 }
+
+.console{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    width: 500px;
+    background: #000000;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+
+}
+
+.consoleTitle{
+    background: #04125c;
+    color: white;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.consoleContent{
+    padding: 10px;
+    background: #000000;
+    color: white;
+}
+    
+

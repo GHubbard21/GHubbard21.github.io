@@ -21,7 +21,7 @@
         <!--Folders Div-->
         <div id="folders">
 
-          <div id="folder" onclick="openWindow()">
+          <div id="folder" onclick="openWindow('aboutWindow')">
             <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
             <h3>About Me</h3>
           </div>
@@ -52,7 +52,7 @@
         <div id="aboutWindow" class="windows">
           <div class="title">
             <span>About Me</span>
-            <button onclick="closeWindow()"> X </button>
+            <button onclick="closeWindow('aboutWindow')"> X </button>
           </div>
 
           <div class="windowContent">
@@ -93,9 +93,24 @@
 
       <!--Taskbar Div-->
       <div id="taskbar">
-        <div id="start">Start</div>
+        <div id="start" onclick="openConsole()">Start</div>
         <div id="clock"></div> 
       </div>
+
+
+      <!-- Console Div-->
+
+      <div id="consoleWindow" class="console">
+          <div class="consoleTitle">
+            <span>gShell</span>
+            <button onclick="closeConsole()"> X </button>
+          </div>
+
+          <div class="consoleContent">
+            <p>Test</p>
+          </div>
+        </div>
+
 
       <script src="Scripts/homescript.js"> </script>
 
