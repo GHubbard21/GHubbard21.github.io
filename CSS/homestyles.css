@@ -68,7 +68,7 @@ display: flex;
     border: 2px solid #48494b;
     box-shadow: 4px 4px #48494b;
     display: none; 
-    z-index: 100;
+    /** z-index: 100; */
 }
 
 .title{
@@ -133,6 +133,7 @@ display: flex;
     background: #000000;
     border: 2px solid #000000;
     box-shadow: 4px 4px #000000;
+    display: none;
 
 }
 
@@ -147,10 +148,51 @@ display: flex;
     font-size: 16px;
 }
 
+.consoleTitle button{
+    background-color: #04125c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;  
+}
+
+
 .consoleContent{
     padding: 10px;
     background: #000000;
     color: white;
+    height: 300px;
+    overflow-y: auto;;
 }
-    
+ 
+
+#output{
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+#inputTXT{
+  /**  font-family: 'Press Start 2P', monospace; */
+    display: flex;
+    align-items: center;
+     position: relative;
+    width: 100%;
+    color: white;
+}
+
+#input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+ /**  font-family: 'Press Start 2P', monospace; */
+  font-size: 16px;
+  width: 100%;
+  caret-color: white;
+}
+
+.prompt{
+    font-size: 16px;
+    margin-right: 8px;
+}
 

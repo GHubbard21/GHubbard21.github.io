@@ -93,22 +93,34 @@
 
       <!--Taskbar Div-->
       <div id="taskbar">
-        <div id="start" onclick="openConsole()">Start</div>
+        <div id="start" onclick="openConsole('consoleWindow')">Start</div>
         <div id="clock"></div> 
       </div>
 
 
       <!-- Console Div-->
-
       <div id="consoleWindow" class="console">
           <div class="consoleTitle">
             <span>gShell</span>
-            <button onclick="closeConsole()"> X </button>
+            <button onclick="closeConsole('consoleWindow')"> X </button>
           </div>
 
           <div class="consoleContent">
-            <p>Test</p>
+
+             <p>Test</p>
+
+            <div id="output"></div>
+
+            <div id="inputTXT">
+
+              <span class="prompt">&gt;</span>
+
+              <input type="text" id="input" autofocus autocomplete="off" />
+            
+            </div>
+
           </div>
+          
         </div>
 
 
