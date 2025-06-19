@@ -22,33 +22,34 @@
         <div id="folders">
 
           <div id="folder" onclick="openWindow('aboutWindow')">
-            <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
+            <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>About Me</h3>
           </div>
 
-          <div id="folder">
-            <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
+          <div id="folder" onclick="openWindow('gamesWindow')">
+            <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Games</h3>
           </div>
 
-          <div id="folder">
-            <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
+          <div id="folder" onclick="openWindow('webWindow')">
+            <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Web Dev</h3>
           </div>
 
-          <div id="folder">
-            <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
+          <div id="folder" onclick="openWindow('artWindow')">
+            <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Art</h3>
           </div>
 
-          <div id="folder">
-            <img src="https://img.icons8.com/isometric/100/folder-invoices.png"/>
+          <div id="folder" onclick="openWindow('resumeWindow')">
+            <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Resume</h3>
           </div>
 
         </div>
 
          <!--Openable Windows Div-->
+         <!--About Me Window-->
         <div id="aboutWindow" class="windows">
           <div class="title">
             <span>About Me</span>
@@ -56,33 +57,78 @@
           </div>
 
           <div class="windowContent">
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
+            <p>Me</p>
           </div>
         </div>
+
+        <!--Games Window-->
+        <div id="gamesWindow" class="windows">
+          <div class="title">
+            <span>Games</span>
+            <button onclick="closeWindow('gamesWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>game</p>
+          </div>
+        </div>
+
+        <!--Web Window-->
+        <div id="webWindow" class="windows">
+          <div class="title">
+            <span>Web Dev</span>
+            <button onclick="closeWindow('webWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Web</p>
+          </div>
+        </div>
+
+        <!--Art Window-->
+        <div id="artWindow" class="windows">
+          <div class="title">
+            <span>Art</span>
+            <button onclick="closeWindow('artWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Art</p>
+          </div>
+        </div>
+
+        <!--Resume Window-->
+        <div id="resumeWindow" class="windows">
+          <div class="title">
+            <span>Resume</span>
+            <button onclick="closeWindow('resumeWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Resume</p>
+          </div>
+        </div>
+
         
         <!--Applications Div-->
         <div id="applications">
           <div id="app">
-            <img src="https://img.icons8.com/isometric/100/filled-trash.png"/>
+            <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
             <h3>Trash</h3>
           </div>
 
            <div id="app">
-            <img src="https://img.icons8.com/isometric/100/america--v1.png"/>
+            <img src="https://img.icons8.com/isometric/75/america--v1.png"/>
             <h3>Internet</h3>
           </div>
 
            <div id="app">
-            <img src="https://img.icons8.com/isometric/100/controller.png"/>
+            <img src="https://img.icons8.com/isometric/75/controller.png"/>
             <h3>Play</h3>
           </div>
 
            <div id="app">
-            <img src="https://img.icons8.com/isometric/100/test-passed.png"/>
+            <img src="https://img.icons8.com/isometric/75/test-passed.png"/>
             <h3>Note Pad</h3>
           </div>
 
@@ -93,7 +139,7 @@
 
       <!--Taskbar Div-->
       <div id="taskbar">
-        <div id="start" onclick="openConsole('consoleWindow')">Start</div>
+        <div id="start" onclick="openConsole('consoleWindow')"  >Start</div>
         <div id="clock"></div> 
       </div>
 

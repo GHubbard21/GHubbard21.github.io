@@ -23,6 +23,15 @@ setInterval(clockUpdate, 1000);
 clockUpdate();
 
 
+function toggelWindow(id){
+     const folderWindow = document.getElementById(id);
+    if (folderWindow.style.display === "block") {
+       folderWindow.style.display = "none";
+    } else {
+       folderWindow.style.display = "block";
+    }
+}
+
 function openWindow(id){
     document.getElementById(id).style.display = "block";
 }
@@ -30,14 +39,24 @@ function openWindow(id){
 function closeWindow(id){
     document.getElementById(id).style.display = "none";
 }
-
+/** 
 function openConsole(id){
     document.getElementById(id).style.display = "block";
 }
-
+*/  
 function closeConsole(id){
     document.getElementById(id).style.display = "none";
 }
+
+function toggleConsole(id){
+    const consoleWindow = document.getElementById(id);
+    if (consoleWindow.style.display === "block") {
+        consoleWindow.style.display = "none";
+    } else {
+        consoleWindow.style.display = "block";
+    }
+}
+
 
 const input = document.getElementById("input");
 const output = document.getElementById("output");
