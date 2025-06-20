@@ -14,7 +14,7 @@ body{
 }
 
 h1{
-    color:#1231a2;
+    color:#1231a2;  
 }
 
 h3{
@@ -23,6 +23,10 @@ h3{
     font-size: 18px;
 }
 
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #1940d0;
+}
 ul{
     list-style-type: none
 }
@@ -44,10 +48,12 @@ li a:visited{
     width: 100%;
     background: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 10;
     animation: fadeOut 2s ease 3s forwards;
+    color:#1231a2;
 }
 @keyframes fadeOut {
   to {
@@ -61,10 +67,6 @@ li a:visited{
     width: 100vw;
     background: #6babeb;
 }
-
-
-
-
 
 #folders{
     top: 50px;
@@ -114,6 +116,7 @@ li a:visited{
 #webWindow{
     top: 150px;
     left: 500px;
+    width: 500px;
 }
 
 #artWindow{
@@ -126,6 +129,24 @@ li a:visited{
     left: 900px;
 }
 
+#trashWindow{
+
+}
+
+#settingsWindow{
+
+}
+
+#playWindow{
+
+}
+
+#notesWindow{
+    top: 400px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+}
 
 #socialsWindow{
     top: 550px;
@@ -139,7 +160,7 @@ li a:visited{
     border: 2px solid #48494b;
     box-shadow: 4px 4px #48494b;
     display: none; 
-    /** z-index: 100; */
+     z-index: 10;
 }
 
 .title{

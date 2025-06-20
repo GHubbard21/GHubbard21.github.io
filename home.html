@@ -13,11 +13,10 @@
     <body>
       
       <!--Loading Screen Div-->
-      <!-- 
+       <!-- 
       <div id="loadingScreen">
         <h1>ghubbard21.xyz</h1>
-        <p>booting...</p>
-
+        <p>booting <span id="dots"></span></p>
       </div>
 -->
 
@@ -74,8 +73,15 @@
           </div>
 
           <div class="windowContent">
-            <p>game</p>
+            <li><a href="https://dripgodmod.itch.io/zombie-carnage" target="_blank">Zombie Carnage</a></li>
+            <br>
+            <li><a href="https://projecttimebound.itch.io/timebound" target="_blank">Timebound</a></li>
+            <br>
+            <li><a href="https://github.com/GHubbard21/SnakeClone" target="_blank">Snake Clone</a></li>
+            <br>
+            <li><a href="https://jalen-brown.itch.io/axolotl" target="_blank">Axolotl Shooter</a></li>
           </div>
+
         </div>
 
         <!--Web Window-->
@@ -88,16 +94,13 @@
           <div class="windowContent">
             <ul>
               <li><a href="WebDevProjects/Snake Password/" target="_blank">Snake Password Game</a></li>
-
+              <br>
               <li><a href="WebDevProjects/1 to 50/" target="_blank">1 to 50 Speed Test</a></li>
-
+              <br>
               <li><a href="WebDevProjects/tip/" target="_blank">Roleplay Tip Calculator</a></li>
-
+              <br>
               <li><a href="WebDevProjects/Button/" target="_blank">The Runaway Button</a></li>
-
-              <li><a href="WebDevProjects/Snake Password/" target="_blank">Snake Password Game</a></li>
-              
-              <li><a href="WebDevProjects/Snake Password/" target="_blank">Snake Password Game</a></li>
+              <br>
             </ul>
           </div>
         </div>
@@ -122,7 +125,7 @@
           </div>
 
           <div class="windowContent">
-            <p>Resume</p>
+            <p><a href="Assets/Grady_Hubbard_2025Resume.pdf">Resume</a></p>
           </div>
         </div>
 
@@ -180,29 +183,36 @@
 
         <div class="windowContent">
           <ul> 
+          
+            <li>
+              <a href="mailto:g21@tomhub.com">Email
+                <img src="https://img.icons8.com/isometric/50/new-post.png"/>
+              </a>
+            </li>
+          
             <li> 
-              <a a href="https://www.instagram.com/ghubbard21/" target="_blank">
+              <a href="https://www.instagram.com/ghubbard21/" target="_blank">
                 Instagram
                 <img src="https://img.icons8.com/isometric/50/instagram-new.png"/>
               </a>
              </li>
 
             <li> 
-              <a a href="https://www.github.com/GHubbard21" target="_blank">
+              <a href="https://www.github.com/GHubbard21" target="_blank">
                 GitHub
                 <img src="https://img.icons8.com/isometric/50/source-code.png"/>
                 </a>
             </li>
-
+           
             <li> 
-              <a a href="https://www.linkedin.com/in/grady-hubbard-617898292" target="_blank">
+              <a href="https://www.linkedin.com/in/grady-hubbard-617898292" target="_blank">
                 LinkedIn
                 <img src="https://img.icons8.com/isometric/50/linkedin.png"/>
               </a>
             </li>
-
+            
             <li> 
-              <a a href="https://www.twitter.com/ghubbard_21" target="_blank">
+              <a href="https://www.twitter.com/ghubbard_21" target="_blank">
                 Twitter
                 <img src="https://img.icons8.com/isometric/50/twitter.png"/>
               </a>
@@ -212,28 +222,33 @@
       </div>  
         
         <!--Applications Div-->
-        <div id="applications" onclick="toggelWindow('trashWindow')">
-          <div id="app">
+        <div id="applications">
+
+          <!--Trash App-->
+          <div id="app" onclick="toggelWindow('trashWindow')">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
             <h3>Trash</h3>
           </div>
 
+          <!--Settings App-->
            <div id="app" onclick="toggelWindow('settingsWindow')">
             <img src="https://img.icons8.com/isometric/75/settings.png"/>
             <h3>Settings</h3>
           </div>
 
+          <!--Play App-->
            <div id="app" onclick="toggelWindow('playWindow')">
             <img src="https://img.icons8.com/isometric/75/controller.png"/>
             <h3>Play</h3>
           </div>
 
+          <!--Notepad App-->
            <div id="app" onclick="toggelWindow('notesWindow')">
             <img src="https://img.icons8.com/isometric/75/test-passed.png"/>
             <h3>Notepad</h3>
           </div>
 
-
+          <!--Socials App-->
           <div id="app" onclick="toggelWindow('socialsWindow')">
             <img src="https://img.icons8.com/isometric/75/myspace.png"/>
             <h3>Socials</h3>

@@ -2,6 +2,20 @@
 // Home Page Script
 // =============================
 
+const dots = document.getElementById("dots");
+
+let numDots = 0;
+
+function loadDots(){
+    numDots++;
+    if(numDots > 3){
+        numDots = 0;
+    }
+    dots.textContent = ".".repeat(numDots);
+}
+setInterval(loadDots, 500);
+
+
 const clock = document.getElementById("clock");
 
 function clockUpdate(){
