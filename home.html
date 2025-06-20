@@ -13,12 +13,13 @@
     <body>
       
       <!--Loading Screen Div-->
-      <!-- WIP 
+      <!-- 
       <div id="loadingScreen">
+        <h1>ghubbard21.xyz</h1>
+        <p>booting...</p>
 
       </div>
-      -->
-
+-->
 
       <!--Desktop Div-->
       <div id="desktop">
@@ -125,46 +126,109 @@
           </div>
         </div>
 
+<!--Trash Window-->
+                <div id="trashWindow" class="windows">
+          <div class="title">
+            <span>Resume</span>
+            <button onclick="closeWindow('trashWindow')"> X </button>
+          </div>
 
-        <div id="socialsWindow" class="windows">
+          <div class="windowContent">
+            <p>Resume</p>
+          </div>
+        </div>
+      <!--Settings Window-->
+                <div id="settingsWindow" class="windows">
+          <div class="title">
+            <span>Settings</span>
+            <button onclick="closeWindow('settingsWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Settings</p>
+          </div>
+        </div>
+<!--Play Window-->
+                <div id="playWindow" class="windows">
+          <div class="title">
+            <span>Resume</span>
+            <button onclick="closeWindow('playWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Resume</p>
+          </div>
+        </div>
+<!--Notepad Window-->
+        <div id="notesWindow" class="windows">
+          <div class="title">
+            <span>Resume</span>
+            <button onclick="closeWindow('notesWindow')"> X </button>
+          </div>
+
+          <div class="windowContent">
+            <p>Notepad</p>
+          </div>
+        </div>
+
+<!--Socials Window-->
+      <div id="socialsWindow" class="windows">
           <div class="title">
             <span>Socials</span>
             <button onclick="closeWindow('socialsWindow')"> X </button>
           </div>
 
-          <div class="windowContent">
-            <ul>
-              <img src="https://img.icons8.com/isometric/50/instagram-new.png"/>
+        <div class="windowContent">
+          <ul> 
+            <li> 
+              <a a href="https://www.instagram.com/ghubbard21/" target="_blank">
+                Instagram
+                <img src="https://img.icons8.com/isometric/50/instagram-new.png"/>
+              </a>
+             </li>
 
-           <li> <a href="https://www.instagram.com/ghubbard21/" >jim </a> </li>
+            <li> 
+              <a a href="https://www.github.com/GHubbard21" target="_blank">
+                GitHub
+                <img src="https://img.icons8.com/isometric/50/source-code.png"/>
+                </a>
+            </li>
 
-           <li> <a href="https://www.github.com/GHubbard21">jim2 </a></li>
+            <li> 
+              <a a href="https://www.linkedin.com/in/grady-hubbard-617898292" target="_blank">
+                LinkedIn
+                <img src="https://img.icons8.com/isometric/50/linkedin.png"/>
+              </a>
+            </li>
 
-           <li> <a href="https://www.linkedin.com/in/grady-hubbard-617898292"> jim3</a></li>
-
-           <li> <a href="https://www.twitter.com/ghubbard_21">jim4 </a>       </li> 
-            </ul>
-          </div>
+            <li> 
+              <a a href="https://www.twitter.com/ghubbard_21" target="_blank">
+                Twitter
+                <img src="https://img.icons8.com/isometric/50/twitter.png"/>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>  
         
         <!--Applications Div-->
-        <div id="applications">
+        <div id="applications" onclick="toggelWindow('trashWindow')">
           <div id="app">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
             <h3>Trash</h3>
           </div>
 
-           <div id="app">
+           <div id="app" onclick="toggelWindow('settingsWindow')">
             <img src="https://img.icons8.com/isometric/75/settings.png"/>
             <h3>Settings</h3>
           </div>
 
-           <div id="app">
+           <div id="app" onclick="toggelWindow('playWindow')">
             <img src="https://img.icons8.com/isometric/75/controller.png"/>
             <h3>Play</h3>
           </div>
 
-           <div id="app">
+           <div id="app" onclick="toggelWindow('notesWindow')">
             <img src="https://img.icons8.com/isometric/75/test-passed.png"/>
             <h3>Notepad</h3>
           </div>
@@ -183,7 +247,7 @@
 
       <!--Taskbar Div-->
       <div id="taskbar">
-        <div id="start" onclick="toggleConsole('consoleWindow')"  >Start</div>
+        <div id="start" onclick="toggleConsole('consoleWindow')">Start</div>
         <div id="clock"></div> 
       </div>
 

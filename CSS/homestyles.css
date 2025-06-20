@@ -13,15 +13,23 @@ body{
   font-style: normal;
 }
 
+h1{
+    color:#1231a2;
+}
+
 h3{
     margin: 0;
     padding-top: 0px;
     font-size: 18px;
 }
 
+ul{
+    list-style-type: none
+}
+
 li a{
     text-decoration: none;
-
+    list-style-type: none;
 }
 
 li a:visited{
@@ -29,9 +37,24 @@ li a:visited{
 }
 
 #loadingScreen{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
     background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    animation: fadeOut 2s ease 3s forwards;
 }
-
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 #desktop{
     height: 100vh;
@@ -228,12 +251,13 @@ li a:visited{
 
 #input{
     background: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  font-size: 16px;
-  width: 100%;
-  caret-color: white;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    caret-color: white;
+    font-family: "Press Start 2P", system-ui;
 }
 
 .prompt{
