@@ -3,13 +3,29 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: "Press Start 2P", system-ui;
     overflow: hidden;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h3{
     margin: 0;
     padding-top: 0px;
     font-size: 18px;
+}
+
+li a{
+    text-decoration: none;
+
+}
+
+li a:visited{
+    text-decoration: none;
 }
 
 #loadingScreen{
@@ -37,7 +53,7 @@ h3{
 }
 
 #folder{
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
@@ -87,9 +103,14 @@ display: flex;
     left: 900px;
 }
 
+
+#socialsWindow{
+    top: 550px;
+    left: 200px;
+}
+
 .windows{
     position: absolute;
-   
     width: 350px;
     background: #eaeaea;
     border: 2px solid #48494b;
@@ -161,7 +182,6 @@ display: flex;
     border: 2px solid #000000;
     box-shadow: 4px 4px #000000;
     display: none;
-
 }
 
 .consoleTitle{
@@ -199,20 +219,18 @@ display: flex;
 }
 
 #inputTXT{
-  /**  font-family: 'Press Start 2P', monospace; */
     display: flex;
     align-items: center;
-     position: relative;
+    position: relative;
     width: 100%;
     color: white;
 }
 
 #input{
-  background: transparent;
+    background: transparent;
   border: none;
   outline: none;
   color: white;
- /**  font-family: 'Press Start 2P', monospace; */
   font-size: 16px;
   width: 100%;
   caret-color: white;
