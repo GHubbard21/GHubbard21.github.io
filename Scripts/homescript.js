@@ -24,7 +24,7 @@ clockUpdate();
 
 
 function toggelWindow(id){
-     const folderWindow = document.getElementById(id);
+    const folderWindow = document.getElementById(id);
     if (folderWindow.style.display === "block") {
        folderWindow.style.display = "none";
     } else {
