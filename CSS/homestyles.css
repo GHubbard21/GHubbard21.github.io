@@ -84,6 +84,10 @@ li a:visited{
     cursor: pointer;
 }
 
+#folder:hover{
+    transform: scale(1.05);
+}
+
 #applications{
     top: 50px;
     left: 25px;
@@ -102,9 +106,14 @@ li a:visited{
     cursor: pointer;
 }
 
+#app:hover{
+    transform: scale(1.05);
+}
+
 #aboutWindow{
     top: 150px;
     left: 100px;
+    width: 500px;
 }
 
 
@@ -122,6 +131,7 @@ li a:visited{
 #artWindow{
     top: 150px;
     left: 700px;
+    width: 500px;
 }
 
 #resumeWindow{
@@ -286,3 +296,50 @@ li a:visited{
     margin-right: 8px;
 }
 
+
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.thumbnail {
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid #1231a2;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid #ffffff;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}

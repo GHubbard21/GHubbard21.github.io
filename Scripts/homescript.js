@@ -130,7 +130,35 @@ input.addEventListener('keydown', function (e) {
 
 
 
+// Art Gallery Modal Logic
+function setupArtModal() {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const modal = document.getElementById('artModal');
+  const modalImg = document.getElementById('modalImage');
 
+  thumbnails.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  window.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+}
+
+function closeModal() {
+  document.getElementById('artModal').style.display = "none";
+}
+
+
+window.onload = function() {
+  clockUpdate();
+  setupArtModal();
+};
 
 
 

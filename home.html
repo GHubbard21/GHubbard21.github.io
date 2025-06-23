@@ -27,7 +27,7 @@
 
           <div id="folder" onclick="toggelWindow('aboutWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
-            <h3>About Me</h3>
+            <h3>About</h3>
           </div>
 
           <div id="folder" onclick="toggelWindow('gamesWindow')">
@@ -56,12 +56,13 @@
          <!--About Me Window-->
         <div id="aboutWindow" class="windows">
           <div class="title">
-            <span>About Me</span>
+            <span>About</span>
             <button onclick="closeWindow('aboutWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <p>Me</p>
+            <p>Grady Hubbard is an independent mobile and web game developer, creative coder, and interactive designer striving to build creative and intriguing games. </p>
+            <p> This website and portfolio showcases his works and interests and will be updated periodically.</p>
           </div>
         </div>
 
@@ -92,6 +93,7 @@
           </div>
 
           <div class="windowContent">
+            <!-- 
             <ul>
               <li><a href="WebDevProjects/Snake Password/" target="_blank">Snake Password Game</a></li>
               <br>
@@ -102,20 +104,71 @@
               <li><a href="WebDevProjects/Button/" target="_blank">The Runaway Button</a></li>
               <br>
             </ul>
+            -->
+             <div id="grid">
+                <a href="WebDevProjects/Snake Password/" target="_blank">
+                  <img src="Assets/SnakePW.PNG" class="thumbnail">
+                  <p>Snake Password Game</p>
+                 
+                </a>
+              
+                <a href="WebDevProjects/1 to 50/" target="_blank">
+                  <img src="Assets/1_50_nums.PNG" class="thumbnail">
+                  <p>1 to 50 Speed Test</p>
+                </a>
+
+                <a href="WebDevProjects/tip/">
+                  <img src="Assets/TipCalc.PNG" class="thumbnail">
+                  <p>Role Play Tip Calculator</p>
+                </a>
+
+                <a href="WebDevProjects/Button/">
+                  <img src="Assets/runawaybutton.PNG" class="thumbnail">
+                 <p>The Runaway Button</p>
+
+                <a href="WebDevProjects/worldcup/">
+                  <img src="Assets/WC2026.PNG" class="thumbnail">
+                 <p>World Cup 2026 Countdown</p>
+
+                </a>
+            </div>  
           </div>
         </div>
+
+
+
 
         <!--Art Window-->
         <div id="artWindow" class="windows">
           <div class="title">
-            <span>Art</span>
+            <span>Images, Animations, Videos</span>
             <button onclick="closeWindow('artWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <p>Art</p>
+            <div id="grid">
+              <img src="Assets/loveme.png" class="thumbnail">
+              <img src="Assets/error404.png" class="thumbnail">
+              <img src="Assets/Surveillance.png" class="thumbnail">
+              <img src="Assets/Passageway.png" class="thumbnail">
+              <img src="Assets/Shoe.png" class="thumbnail">
+              <img src="Assets/Main5.gif" class="thumbnail">
+              <img src="Assets/Main6.gif" class="thumbnail">
+              <img src="Assets/Main12.gif" class="thumbnail">
+             <!--  <img src="Assets/DoodleJump_GIF.gif" class="thumbnail" data-youtube="https://www.youtube.com/embed/ejYUq0QbB-c?si=c4G5DbWkq-6A9lp-"> -->
+            </div>
           </div>
+        </div>  
+
+        <div id="artModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+          <p></p>
         </div>
+
+      
+
+ 
 
         <!--Resume Window-->
         <div id="resumeWindow" class="windows">
