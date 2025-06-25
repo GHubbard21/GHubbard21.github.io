@@ -112,7 +112,7 @@ li a:visited{
 
 #aboutWindow{
     top: 150px;
-    left: 100px;
+    left: 150px;
     width: 500px;
 }
 
@@ -141,11 +141,15 @@ li a:visited{
 }
 
 #trashWindow{
-
+    top: 150px;
+    left: 150px;
+    width: 500px;
 }
 
 #settingsWindow{
-
+    top: 150px;
+    left: 150px;
+    width: 500px;
 }
 
 #playWindow{
@@ -171,7 +175,7 @@ li a:visited{
     border: 2px solid #48494b;
     box-shadow: 4px 4px #48494b;
     display: none; 
-     z-index: 10;
+    z-index: 10;
 }
 
 .title{
@@ -297,8 +301,6 @@ li a:visited{
     margin-right: 8px;
 }
 
-
-
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -312,6 +314,10 @@ li a:visited{
     transition: transform 0.2s;
 }
 
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
 .gameThumbnail{
     width: 100%;
     cursor: pointer;
@@ -319,7 +325,7 @@ li a:visited{
     transition: transform 0.2s;
 }
 
-.thumbnail:hover {
+.gameThumbnail:hover {
   transform: scale(1.05);
 }
 
