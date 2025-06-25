@@ -69,47 +69,57 @@
         <!--Games Window-->
         <div id="gamesWindow" class="windows">
           <div class="title">
-            <span>Games</span>
+            <span>Games, Games, Games</span>
             <button onclick="closeWindow('gamesWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <li><a href="https://dripgodmod.itch.io/zombie-carnage" target="_blank">Zombie Carnage</a></li>
-            <br>
-            <li><a href="https://projecttimebound.itch.io/timebound" target="_blank">Timebound</a></li>
-            <br>
-            <li><a href="https://github.com/GHubbard21/SnakeClone" target="_blank">Snake Clone</a></li>
-            <br>
-            <li><a href="https://jalen-brown.itch.io/axolotl" target="_blank">Axolotl Shooter</a></li>
-          </div>
+            <div id="grid">
+              <a href="https://dripgodmod.itch.io/zombie-carnage" target="_blank">
+                  <img src="Assets/snake_Gif.gif" class="gameThumbnail">
+                  <p>Zombie Carnage</p>
+                </a>
 
+                <a href="https://projecttimebound.itch.io/timebound" target="_blank">
+                  <img src="Assets/snake_Gif.gif" class="gameThumbnail">
+                  <p>Time Bound</p>
+                </a>
+
+                <a href="https://github.com/GHubbard21/DoodleJumpClone" target="_blank">
+                  <img src="Assets/DoodleJump_GIF.gif" class="gameThumbnail">
+                  <p>Doodle Jump</p>
+                </a>
+
+                <a href="https://jalen-brown.itch.io/axolotl" target="_blank">
+                  <img src="Assets/AxolotlGame.gif" class="gameThumbnail">
+                  <p>Axolotl Shooter</p>
+                </a>
+
+                <a href="https://github.com/GHubbard21/SnakeClone" target="_blank">
+                  <img src="Assets/snake_Gif.gif" class="gameThumbnail">
+                  <p>Snake Clone</p>
+                </a>
+
+
+            </div>
+            
+
+
+          </div>
         </div>
 
         <!--Web Window-->
         <div id="webWindow" class="windows">
           <div class="title">
-            <span>Web Dev</span>
+            <span>Web Projects, Games, Apps</span>
             <button onclick="closeWindow('webWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <!-- 
-            <ul>
-              <li><a href="WebDevProjects/Snake Password/" target="_blank">Snake Password Game</a></li>
-              <br>
-              <li><a href="WebDevProjects/1 to 50/" target="_blank">1 to 50 Speed Test</a></li>
-              <br>
-              <li><a href="WebDevProjects/tip/" target="_blank">Roleplay Tip Calculator</a></li>
-              <br>
-              <li><a href="WebDevProjects/Button/" target="_blank">The Runaway Button</a></li>
-              <br>
-            </ul>
-            -->
              <div id="grid">
                 <a href="WebDevProjects/Snake Password/" target="_blank">
                   <img src="Assets/SnakePW.PNG" class="thumbnail">
                   <p>Snake Password Game</p>
-                 
                 </a>
               
                 <a href="WebDevProjects/1 to 50/" target="_blank">
@@ -129,13 +139,10 @@
                 <a href="WebDevProjects/worldcup/">
                   <img src="Assets/WC2026.PNG" class="thumbnail">
                  <p>World Cup 2026 Countdown</p>
-
                 </a>
-            </div>  
+              </div>  
           </div>
         </div>
-
-
 
 
         <!--Art Window-->
@@ -161,7 +168,7 @@
         </div>  
 
         <div id="artModal" class="modal">
-          <span class="close" onclick="closeModal()">&times;</span>
+          <span class="close" onclick="closeModal()"> X </span>
           <img class="modal-content" id="modalImage">
           <p></p>
         </div>
