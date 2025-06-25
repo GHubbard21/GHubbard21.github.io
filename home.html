@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
     <body>
-      
+
       <!--Loading Screen Div-->
        <!-- 
       <div id="loadingScreen">
@@ -25,26 +25,31 @@
         <!--Folders Div-->
         <div id="folders">
 
+          <!--About Folder-->
           <div id="folder" onclick="toggelWindow('aboutWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>About</h3>
           </div>
 
+          <!--Games Folder-->
           <div id="folder" onclick="toggelWindow('gamesWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Games</h3>
           </div>
 
+          <!--Web Dev Folder-->
           <div id="folder" onclick="toggelWindow('webWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Web Dev</h3>
           </div>
 
+          <!--Art Folder-->
           <div id="folder" onclick="toggelWindow('artWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Art</h3>
           </div>
 
+          <!--Resume Folder-->
           <div id="folder" onclick="toggelWindow('resumeWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Resume</h3>
@@ -176,21 +181,20 @@
           </div>
 
           <div class="windowContent">
+            <a href="Assets/Grady_Hubbard_2025Resume.pdf" target="_blank"> Resume</a> 
           </div>
         </div>
 
       <!--Trash Window-->
         <div id="trashWindow" class="windows">
           <div class="title">
-            <span>Resume</span>
+            <span>Trash</span>
             <button onclick="closeWindow('trashWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <p>Resume</p>
           </div>
         </div>
-
 
       <!--Settings Window-->
         <div id="settingsWindow" class="windows">
@@ -200,33 +204,52 @@
           </div>
 
           <div class="windowContent">
-            <p>Settings</p>
+            <p>Theme</p>
+
+            <p>Background Color</p>
+
+            <p>Font Selection</p>
+            <select>
+              <option value="Press Start 2P">Press Start 2P</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Comic Sans MS">Comic Sans</option>
+              <option value="monospace">Monospace</option>
+            </select>
+
+            <p>Time Change</p>
+            <button onclick="toggleTime()"> 12h / 24h</button>
+
+            <p>Volume</p>
+
+            <p>Language</p>
+
           </div>
         </div>
-<!--Play Window-->
+
+
+      <!--Play Window-->
         <div id="playWindow" class="windows">
           <div class="title">
-            <span>Resume</span>
+            <span>Play</span>
             <button onclick="closeWindow('playWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <p>Resume</p>
           </div>
         </div>
-<!--Notepad Window-->
+
+      <!--Notepad Window-->
         <div id="notesWindow" class="windows">
           <div class="title">
-            <span>Resume</span>
+            <span>Notepad</span>
             <button onclick="closeWindow('notesWindow')"> X </button>
           </div>
 
           <div class="windowContent">
-            <p>Notepad</p>
           </div>
         </div>
 
-<!--Socials Window-->
+      <!--Socials Window-->
       <div id="socialsWindow" class="windows">
           <div class="title">
             <span>Socials</span>
@@ -305,19 +328,14 @@
             <img src="https://img.icons8.com/isometric/75/myspace.png"/>
             <h3>Socials</h3>
           </div>
-
-
         </div>
 
-
-      
 
       <!--Taskbar Div-->
       <div id="taskbar">
         <div id="start" onclick="toggleConsole('consoleWindow')">Start</div>
         <div id="clock"></div> 
       </div>
-
 
       <!-- Console Div-->
       <div id="consoleWindow" class="console">

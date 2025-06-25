@@ -18,6 +18,13 @@ setInterval(loadDots, 500);
 
 const clock = document.getElementById("clock");
 
+let hour24 = false;
+
+function toggleTime(){
+  hour24 = !hour24;
+  clockUpdate();
+}
+
 function clockUpdate(){
     let time = new Date();
 
@@ -27,7 +34,7 @@ function clockUpdate(){
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: true
+        hour12: !hour24
     });
 
     clock.innerHTML = day + " " + currentTime;
