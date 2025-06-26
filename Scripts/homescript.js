@@ -178,7 +178,14 @@ function changeBackgroundColor(color){
   document.getElementById('desktop').style.backgroundColor = color;
 }
 
-
+function changeFont(font){
+  if (font === "default") {
+    document.body.style.fontFamily = ""; 
+  } 
+  else {
+    document.body.style.fontFamily = font;
+  }
+}
 
 
 function dragWindow(windowToDrag){
@@ -194,6 +201,23 @@ function dragWindow(windowToDrag){
 function drag(){
 
 }
+
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+
+  const menu = document.getElementById("rightClickMenu");
+
+  menu.style.top = e.clientY + "px";
+  menu.style.left = e.clientX + "px";
+  menu.style.display = "block";
+});
+
+
+document.addEventListener("click", function () {
+  document.getElementById("rightClickMenu").style.display = "none";
+});
+
 
 
 

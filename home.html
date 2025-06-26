@@ -188,6 +188,7 @@
           </div>
         </div>
 
+
       <!--Trash Window-->
         <div id="trashWindow" class="windows">
           <div class="title">
@@ -207,27 +208,55 @@
           </div>
 
           <div class="windowContent">
+            <div class="settings">
+
+            </div>
             <p>Background Image</p>
 
           <!--  <input type="file" onchange="changeBackgroundImage(image)"> --> 
+            <div class="settings">
+              <p>Background Color</p>
+              <input type="color" id="bgPicker" value="#6babeb" onchange="changeBackgroundColor(this.value)">
+            </div>
 
-            <p>Background Color</p>
-            <input type="color" id="bgPicker" onchange="changeBackgroundColor(this.value)">
+            <div class="settings">
+              <p>Task Bar Color</p>
+              <input type="color" id="bgPicker" value="#6babeb" onchange="changeBackgroundColor(this.value)">
+            </div>
 
-            <p>Font Selection</p>
-            <select>
-              <option value="Press Start 2P">Press Start 2P</option>
-              <option value="Courier New">Courier New</option>
-              <option value="Comic Sans MS">Comic Sans</option>
-              <option value="monospace">Monospace</option>
+
+            <div class="settings">
+              <p>Font Selection</p>
+              <select onchange="changeFont(this.value)">
+                <option value="default">Press Start 2P</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Comic Sans MS">Comic Sans</option>\
+                <option value="monospace">Monospace</option>
             </select>
+            </div>
+           
 
-            <p>Time Change</p>
-            <button onclick="toggleTime()"> 12h / 24h</button>
 
-            <p>Volume</p>
-
-            <p>Language</p>
+            <div class="settings">
+              <p>Time Change</p>
+              <button onclick="toggleTime()"> 12h / 24h</button>
+            </div>
+            
+            <div class="settings"> 
+               <p>Volume</p>
+               <input type="range">
+            </div>
+           
+            <div class="settings">
+              <p>Language</p>
+              <select onchange="changeFont(this.value)">
+                <option value="default">Press Start 2P</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Comic Sans MS">Comic Sans</option>\
+                <option value="monospace">Monospace</option>
+            </select>
+            </div>
+            
 
           </div>
         </div>
@@ -308,7 +337,7 @@
           <!--Trash App-->
           <div id="app" onclick="toggelWindow('trashWindow')">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
-            <h3>Trash</h3>
+            <h3>Recycle</h3>
           </div>
 
           <!--Settings App-->
@@ -368,6 +397,16 @@
           </div>
           
         </div>
+
+
+        <!--Right Click Menu-->
+          <ul id="rightClickMenu">
+            <li>Trash</li>
+            <li>Settings</li>
+            <li>Notes</li>
+            <li onclick="toggleConsole('consoleWindow')">gShell</li>
+          </ul>
+        
 
 
       <script src="Scripts/homescript.js"> </script>
