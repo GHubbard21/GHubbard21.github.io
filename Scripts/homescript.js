@@ -167,6 +167,34 @@ window.onload = function() {
   setupArtModal();
 };
 
+/** 
+function changeBackgroundImage(img){
+  document.getElementById('desktop').style.imageRendering = img;
+}
+*/
+
+
+function changeBackgroundColor(color){
+  document.getElementById('desktop').style.backgroundColor = color;
+}
+
+
+
+
+function dragWindow(windowToDrag){
+  const dragArea = windowToDrag.querySelectorAll(".title");
+
+  var InitialWindowX = 0;
+  var initialWindowY = 0;
+
+  var currentWindowX = 0;
+  var currentWindowY = 0; 
+}
+
+function drag(){
+
+}
+
 
 
 // =============================
