@@ -249,11 +249,11 @@
            
             <div class="settings">
               <p>Language</p>
-              <select onchange="changeFont(this.value)">
-                <option value="default">Press Start 2P</option>
-                <option value="Courier New">Courier New</option>
-                <option value="Comic Sans MS">Comic Sans</option>\
-                <option value="monospace">Monospace</option>
+              <select onchange="">
+                <option value="default">English</option>
+                <option value="">Spanish</option>
+                <option value="">French</option>\
+                <option value="">h4Ck3R</option>
             </select>
             </div>
             
@@ -337,7 +337,7 @@
           <!--Trash App-->
           <div id="app" onclick="toggelWindow('trashWindow')">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
-            <h3>Recycle</h3>
+            <h3>Trash</h3>
           </div>
 
           <!--Settings App-->
@@ -393,17 +393,16 @@
               <input type="text" id="input" autofocus autocomplete="off" />
             
             </div>
-
           </div>
-          
         </div>
 
 
         <!--Right Click Menu-->
           <ul id="rightClickMenu">
-            <li>Trash</li>
-            <li>Settings</li>
-            <li>Notes</li>
+            <li onclick="">Refresh</li>
+            <li onclick="toggleConsole('trashWindow')">Trash</li>
+            <li onclick="toggleConsole('settingsWindow')">Settings</li>
+            <li onclick="toggleConsole('notesWindow')">Notes</li>
             <li onclick="toggleConsole('consoleWindow')">gShell</li>
           </ul>
         
