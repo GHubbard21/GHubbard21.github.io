@@ -193,6 +193,14 @@ function changeFont(font){
 }
 
 
+
+function changeBarColor(color){
+  document.getElementById('taskbar').style.backgroundColor = color;
+}
+
+
+
+
 function dragWindow(windowToDrag){
   const dragArea = windowToDrag.querySelectorAll(".title");
 

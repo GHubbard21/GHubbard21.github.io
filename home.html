@@ -192,7 +192,7 @@
       <!--Trash Window-->
         <div id="trashWindow" class="windows">
           <div class="title">
-            <span>Trash</span>
+            <span>Garbage</span>
             <button onclick="closeWindow('trashWindow')"> X </button>
           </div>
 
@@ -203,7 +203,7 @@
       <!--Settings Window-->
         <div id="settingsWindow" class="windows">
           <div class="title">
-            <span>Settings</span>
+            <span>Options</span>
             <button onclick="closeWindow('settingsWindow')"> X </button>
           </div>
 
@@ -221,7 +221,7 @@
 
             <div class="settings">
               <p>Task Bar Color</p>
-              <input type="color" id="bgPicker" value="#6babeb" onchange="changeBackgroundColor(this.value)">
+              <input type="color" id="barPicker" value="#6babeb" onchange="changeBarColor(this.value)">
             </div>
 
 
@@ -292,42 +292,55 @@
           </div>
 
         <div class="windowContent">
-          <ul> 
-          
-            <li>
-              <a href="mailto:g21@tomhub.com">Email
-                <img src="https://img.icons8.com/isometric/50/new-post.png"/>
-              </a>
-            </li>
-          
-            <li> 
-              <a href="https://www.instagram.com/ghubbard21/" target="_blank">
-                Instagram
-                <img src="https://img.icons8.com/isometric/50/instagram-new.png"/>
-              </a>
-             </li>
 
-            <li> 
-              <a href="https://www.github.com/GHubbard21" target="_blank">
-                GitHub
-                <img src="https://img.icons8.com/isometric/50/source-code.png"/>
-                </a>
-            </li>
+          <div class="socialSettings">
+            <span>Email</span>
+            <a href="mailto:g21@tomhub.com" target="_blank">
+              <img src="https://img.icons8.com/isometric/50/new-post.png"/>
+            </a>
+          </div>
+
+          <div class="socialSettings">
+            <span>Instagram</span>
+            <a href="https://www.instagram.com/ghubbard21/" target="_blank">
+              <img src="https://img.icons8.com/isometric/50/instagram-new.png"/>
+            </a>
+          </div>
+             
+          <div class="socialSettings">
+            <span>GitHub</span>
+            <a href="https://www.github.com/GHubbard21" target="_blank">
+              <img src="https://img.icons8.com/isometric/50/source-code.png"/>
+            </a>
+          </div>
+          
+          <div class="socialSettings">
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/grady-hubbard-617898292" target="_blank">
+              <img src="https://img.icons8.com/isometric/50/linkedin.png"/>
+            </a>
+          </div>
+          
+          <div class="socialSettings">
+            <span>Twitter</span>
+            <a href="https://www.twitter.com/ghubbard_21" target="_blank">
+              <img src="https://img.icons8.com/isometric/50/twitter.png"/>
+            </a>
+          </div>
            
-            <li> 
-              <a href="https://www.linkedin.com/in/grady-hubbard-617898292" target="_blank">
-                LinkedIn
-                <img src="https://img.icons8.com/isometric/50/linkedin.png"/>
-              </a>
-            </li>
+
             
-            <li> 
-              <a href="https://www.twitter.com/ghubbard_21" target="_blank">
-                Twitter
-                <img src="https://img.icons8.com/isometric/50/twitter.png"/>
-              </a>
-            </li>
-          </ul>
+              
+           
+           
+            
+             
+            
+            
+           
+             
+            
+         
         </div>
       </div>  
         
@@ -337,21 +350,21 @@
           <!--Trash App-->
           <div id="app" onclick="toggelWindow('trashWindow')">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
-            <h3>Trash</h3>
+            <h3>Garbage</h3>
           </div>
 
           <!--Settings App-->
            <div id="app" onclick="toggelWindow('settingsWindow')">
             <img src="https://img.icons8.com/isometric/75/settings.png"/>
-            <h3>Settings</h3>
+            <h3>Options</h3>
           </div>
-
-          <!--Play App-->
+<!-- 
+          Play App
            <div id="app" onclick="toggelWindow('playWindow')">
             <img src="https://img.icons8.com/isometric/75/controller.png"/>
             <h3>Play</h3>
           </div>
-
+-->
           <!--Notepad App-->
            <div id="app" onclick="toggelWindow('notesWindow')">
             <img src="https://img.icons8.com/isometric/75/test-passed.png"/>

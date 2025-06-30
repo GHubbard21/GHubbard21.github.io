@@ -178,8 +178,15 @@ li a:visited{
 }
 
 #socialsWindow{
-    top: 550px;
+    top: 450px;
     left: 200px;
+}
+
+.socialSettings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .windows{
