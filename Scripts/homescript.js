@@ -142,11 +142,16 @@ function setupArtModal() {
   const thumbnails = document.querySelectorAll('.thumbnail');
   const modal = document.getElementById('artModal');
   const modalImg = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
 
   thumbnails.forEach(img => {
     img.addEventListener('click', () => {
       modal.style.display = "block";
       modalImg.src = img.src;
+
+      modalTitle.textContent = img.dataset.title || '';
+
+
     });
   });
 

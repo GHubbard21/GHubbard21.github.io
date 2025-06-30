@@ -352,6 +352,7 @@ li a:visited{
     height: 100%;
     width: 100%;
     background-color: black;
+    
 }
 
 .modal-content {
@@ -361,6 +362,17 @@ li a:visited{
     max-height: 90%;
     border: 5px solid #ffffff;
 }
+
+#modalTitle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
 
 .close {
     position: absolute;
