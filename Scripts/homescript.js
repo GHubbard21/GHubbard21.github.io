@@ -1,5 +1,10 @@
 // =============================
-// Home Page Script
+// Home.html Script
+// =============================
+
+
+// =============================
+// Loading Screen Section
 // =============================
 
 const dots = document.getElementById("dots");
@@ -16,33 +21,10 @@ function loadDots(){
 setInterval(loadDots, 500);
 
 
-const clock = document.getElementById("clock");
 
-let hour24 = false;
-
-function toggleTime(){
-  hour24 = !hour24;
-  clockUpdate();
-}
-
-function clockUpdate(){
-    let time = new Date();
-
-    let day = time.toLocaleDateString('en-US', { weekday: 'long' });
-
-    let currentTime = time.toLocaleTimeString('en-US', { 
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: !hour24
-    });
-
-    clock.innerHTML = day + " " + currentTime;
-
-}
-setInterval(clockUpdate, 1000);
-clockUpdate();
-
+// =============================
+// Open/ Close Windows Section
+// =============================
 
 function toggelWindow(id){
     const folderWindow = document.getElementById(id);
@@ -60,11 +42,11 @@ function openWindow(id){
 function closeWindow(id){
     document.getElementById(id).style.display = "none";
 }
-/** 
-function openConsole(id){
-    document.getElementById(id).style.display = "block";
-}
-*/  
+
+
+// =============================
+// Console Section
+// =============================
 function closeConsole(id){
     document.getElementById(id).style.display = "none";
 }
@@ -112,8 +94,6 @@ function handleCommand(cmd) {
 
   // Write the command and its response to the output text area.
   output.innerHTML += "> " + cmd + "\n" + response + "\n\n";
-
-
 }
 
 /**
@@ -135,9 +115,10 @@ input.addEventListener('keydown', function (e) {
 
 
 
+// =============================
+// Open Modals Section
+// =============================
 
-
-// Art Gallery Modal Logic
 function setupArtModal() {
   const thumbnails = document.querySelectorAll('.thumbnail');
   const modal = document.getElementById('artModal');
@@ -172,13 +153,9 @@ window.onload = function() {
   setupArtModal();
 };
 
-/** 
-function changeBackgroundImage(img){
-  document.getElementById('desktop').style.imageRendering = img;
-}
-*/
-
-
+// =============================
+// Settings Section
+// =============================
 function changeBackgroundColor(color){
   document.getElementById('desktop').style.backgroundColor = color;
 }
@@ -192,14 +169,13 @@ function changeFont(font){
   }
 }
 
-
-
 function changeBarColor(color){
   document.getElementById('taskbar').style.backgroundColor = color;
 }
 
-
-
+// =============================
+// Drag Windows Section
+// =============================
 
 function dragWindow(windowToDrag){
   const dragArea = windowToDrag.querySelectorAll(".title");
@@ -215,6 +191,39 @@ function drag(){
 
 }
 
+// =============================
+// Clock Section
+// =============================
+const clock = document.getElementById("clock");
+
+let hour24 = false;
+
+function toggleTime(){
+  hour24 = !hour24;
+  clockUpdate();
+}
+
+function clockUpdate(){
+    let time = new Date();
+
+    let day = time.toLocaleDateString('en-US', { weekday: 'long' });
+
+    let currentTime = time.toLocaleTimeString('en-US', { 
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: !hour24
+    });
+
+    clock.innerHTML = day + " " + currentTime;
+
+}
+setInterval(clockUpdate, 1000);
+clockUpdate();
+
+// =============================
+// Right Click Menu Section
+// =============================
 
 document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
@@ -231,23 +240,23 @@ document.addEventListener("click", function () {
   document.getElementById("rightClickMenu").style.display = "none";
 });
 
-
-
-
-// =============================
-// Console Section
-// =============================
-
-
 // =============================
 // Notepad Section
 // =============================
 
+function saveNote(){
 
-// =============================
-// Games Section
-// =============================
+}
 
-// =============================
-// Folders Section
-// =============================
+function clearNote(){
+
+}
+
+
+function downloadNote(){
+
+}
+
+
+
+

@@ -67,6 +67,7 @@
 
           <div class="windowContent">
             <p>Grady Hubbard is an independent mobile and web game developer, creative coder, and interactive designer striving to build creative and intriguing games. </p>
+            <p> Experienced with game development engines, web technologies, and creative software, Grady demonstrates a passion for experimenting, problem-solving, and building interactive experiences. </p>
             <p> This website and portfolio showcases his works and interests and will be updated periodically.</p>
           </div>
         </div>
@@ -208,10 +209,12 @@
           </div>
 
           <div class="windowContent">
+            <!-- 
             <div class="settings">
-
+               <p>Background Image</p>
+               <input type="file">
             </div>
-            <p>Background Image</p>
+           -->
 
           <!--  <input type="file" onchange="changeBackgroundImage(image)"> --> 
             <div class="settings">
@@ -221,9 +224,8 @@
 
             <div class="settings">
               <p>Task Bar Color</p>
-              <input type="color" id="barPicker" value="#6babeb" onchange="changeBarColor(this.value)">
+              <input type="color" id="barPicker" value="#4F73F5" onchange="changeBarColor(this.value)">
             </div>
-
 
             <div class="settings">
               <p>Font Selection</p>
@@ -235,8 +237,6 @@
             </select>
             </div>
            
-
-
             <div class="settings">
               <p>Time Change</p>
               <button onclick="toggleTime()"> 12h / 24h</button>
@@ -252,7 +252,7 @@
               <select onchange="">
                 <option value="default">English</option>
                 <option value="">Spanish</option>
-                <option value="">French</option>\
+                <option value="">French</option>
                 <option value="">h4Ck3R</option>
             </select>
             </div>
@@ -281,6 +281,18 @@
           </div>
 
           <div class="windowContent">
+            <div class="notepad">
+                  <button onclick="saveNote()">Save</button>
+                  <button onclick="clearNote()">Clear</button>
+                  <button onclick="downloadNote()">Download</button>
+                  <br>
+                  <br>
+                  <textarea id="notepadText"></textarea> 
+            </div>
+            
+
+
+
           </div>
         </div>
 
@@ -413,8 +425,8 @@
         <!--Right Click Menu-->
           <ul id="rightClickMenu">
             <li onclick="">Refresh</li>
-            <li onclick="toggleConsole('trashWindow')">Trash</li>
-            <li onclick="toggleConsole('settingsWindow')">Settings</li>
+            <li onclick="toggleConsole('trashWindow')">Garbage</li>
+            <li onclick="toggleConsole('settingsWindow')">Options</li>
             <li onclick="toggleConsole('notesWindow')">Notes</li>
             <li onclick="toggleConsole('consoleWindow')">gShell</li>
           </ul>

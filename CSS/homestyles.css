@@ -71,7 +71,7 @@ li a:visited{
 
 #folders{
     top: 50px;
-    left: 175px;
+    left: 250px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -114,7 +114,7 @@ li a:visited{
 #aboutWindow{
     top: 150px;
     left: 150px;
-    width: 500px;
+    width: 700px;
 }
 
 
@@ -413,4 +413,37 @@ li a:visited{
 
 #rightClickMenu li:hover {
   background-color: #cfcfcf;
+}
+
+
+#notesWindow .windowContent{
+    background-color: #dbc9a6;
+}
+
+.notepad{
+    background-color: #dbc9a6;
+}
+
+.notepad button {
+    background: #031ea2;
+    color: white;
+    font-family: "Press Start 2P", system-ui ;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    gap: 10px;
+}
+
+.notepad button:hover {
+    background-color: #051b89;
+}
+
+#notepadText{
+    background-color: #dbc9a6;
+    width: 100%;
+    height: 300px;
+    font-family: "Press Start 2P", system-ui ;
+    border: none;
+    outline: none;
+    resize: none;
 }
