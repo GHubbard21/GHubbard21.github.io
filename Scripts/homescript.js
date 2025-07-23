@@ -182,9 +182,39 @@ function changeBarColor(color) {
 
 // USING Interact.js for this becuase this shit was confusing the fuck out of me.
 
-interact('.windows').draggable({
+interact(".windows").draggable({
 
-})
+  // Only the title bar is draggable portion of the window.
+  allowFrom: ".title",
+
+  listeners: {
+    // On Start
+    start(event) {
+      const targetWindow = event.target;
+
+      // Get the inital position of the targetWindow. Using px becuase of CSS.
+      targetWindow.style.top = targetWindow.offsetTop + 'px';
+      targetWindow.style.left = targetWindow.offsetLeft + 'px';
+    },
+    // On Drag
+    move(event) {
+      const targetWindow = event.target;
+
+      // Get the current top and left values from CSS. 
+      // Conver from px ---> int.
+      let top = parseInt(targetWindow.style.top);
+      let left = parseInt(targetWindow.style.left);
+
+      // Add the distance moved from the drag.
+      top += event.dy;
+      left += event.dx;
+
+      // Set the new positions to the element.
+      targetWindow.style.top = top + 'px';
+      targetWindow.style.left = left + 'px';
+    }
+  }
+});
 
 // =============================
 // Clock Section

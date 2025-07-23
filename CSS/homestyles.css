@@ -197,6 +197,7 @@ li a:visited{
     box-shadow: 4px 4px #48494b;
     display: none; 
     z-index: 10;
+    will-change: transform;
 }
 
 .title{
