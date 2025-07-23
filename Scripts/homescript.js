@@ -11,7 +11,7 @@ const dots = document.getElementById("dots");
 
 let numDots = 0;
 
-function loadDots(){
+function loadDots() {
     numDots++;
     if(numDots > 3){
         numDots = 0;
@@ -26,40 +26,43 @@ setInterval(loadDots, 500);
 // Open/ Close Windows Section
 // =============================
 
-function toggelWindow(id){
-    const folderWindow = document.getElementById(id);
-    if (folderWindow.style.display === "block") {
-       folderWindow.style.display = "none";
-    } else {
-       folderWindow.style.display = "block";
-    }
+function toggelWindow(id) {
+  const folderWindow = document.getElementById(id);
+  
+  if (folderWindow.style.display === "block") {
+    folderWindow.style.display = "none";
+  } 
+  else {
+    folderWindow.style.display = "block";
+  }
 }
 
-function openWindow(id){
-    document.getElementById(id).style.display = "block";
+function openWindow(id) {
+  document.getElementById(id).style.display = "block";
 }
 
-function closeWindow(id){
-    document.getElementById(id).style.display = "none";
+function closeWindow(id) {
+  document.getElementById(id).style.display = "none";
 }
 
 
 // =============================
 // Console Section
 // =============================
-function closeConsole(id){
-    document.getElementById(id).style.display = "none";
+function closeConsole(id) {
+  document.getElementById(id).style.display = "none";
 }
 
-function toggleConsole(id){
-    const consoleWindow = document.getElementById(id);
-    if (consoleWindow.style.display === "block") {
-        consoleWindow.style.display = "none";
-    } else {
-        consoleWindow.style.display = "block";
-    }
+function toggleConsole(id) {
+  const consoleWindow = document.getElementById(id);
+  
+  if (consoleWindow.style.display === "block") {
+    consoleWindow.style.display = "none";
+  } 
+  else {
+    consoleWindow.style.display = "block";
+  }
 }
-
 
 const input = document.getElementById("input");
 const output = document.getElementById("output");
@@ -156,11 +159,11 @@ window.onload = function() {
 // =============================
 // Settings Section
 // =============================
-function changeBackgroundColor(color){
+function changeBackgroundColor(color) {
   document.getElementById('desktop').style.backgroundColor = color;
 }
 
-function changeFont(font){
+function changeFont(font) {
   if (font === "default") {
     document.body.style.fontFamily = ""; 
   } 
@@ -169,7 +172,7 @@ function changeFont(font){
   }
 }
 
-function changeBarColor(color){
+function changeBarColor(color) {
   document.getElementById('taskbar').style.backgroundColor = color;
 }
 
@@ -177,19 +180,11 @@ function changeBarColor(color){
 // Drag Windows Section
 // =============================
 
-function dragWindow(windowToDrag){
-  const dragArea = windowToDrag.querySelectorAll(".title");
+// USING Interact.js for this becuase this shit was confusing the fuck out of me.
 
-  var InitialWindowX = 0;
-  var initialWindowY = 0;
+interact('.windows').draggable({
 
-  var currentWindowX = 0;
-  var currentWindowY = 0; 
-}
-
-function drag(){
-
-}
+})
 
 // =============================
 // Clock Section
@@ -198,7 +193,7 @@ const clock = document.getElementById("clock");
 
 let hour24 = false;
 
-function toggleTime(){
+function toggleTime() {
   hour24 = !hour24;
   clockUpdate();
 }
@@ -218,6 +213,7 @@ function clockUpdate(){
     clock.innerHTML = day + " " + currentTime;
 
 }
+
 setInterval(clockUpdate, 1000);
 clockUpdate();
 
@@ -244,16 +240,17 @@ document.addEventListener("click", function () {
 // Notepad Section
 // =============================
 
-function saveNote(){
+function saveNote() {
+  const newNote = document.getElementById("notepadText").value;
 
 }
 
-function clearNote(){
-
+function clearNote() {
+  document.getElementById("notepadText").value = "";
 }
 
 
-function downloadNote(){
+function downloadNote() {
 
 }
 
