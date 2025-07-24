@@ -192,7 +192,7 @@ interact(".windows").draggable({
     start(event) {
       const targetWindow = event.target;
 
-      // Get the inital position of the targetWindow. Using px becuase of CSS.
+      // Get the inital position of the targetWindow. Using px because of CSS.
       targetWindow.style.top = targetWindow.offsetTop + 'px';
       targetWindow.style.left = targetWindow.offsetLeft + 'px';
     },
@@ -215,6 +215,43 @@ interact(".windows").draggable({
     }
   }
 });
+
+/**
+ * Same code as above, just for the console window.
+ */
+interact(".console").draggable({
+  // Only the title bar of the console is draggable
+  allowFrom: ".consoleTitle",
+
+  listeners: {
+    // On Start
+    start(event) {
+      const consoleWindow = event.target;
+
+       // Get the inital position of the consoleWindow. Using px because of CSS.
+      consoleWindow.style.top = consoleWindow.offsetTop + 'px';
+      consoleWindow.style.left = consoleWindow.offsetLeft + 'px';
+    },
+    // On Drag
+    move(event) {
+      const consoleWindow = event.target;
+
+      // Get the current top and left values from CSS. 
+      // Conver from px ---> int.
+      let top = parseInt(consoleWindow.style.top);
+      let left = parseInt(consoleWindow.style.left);
+
+      // Add the distance moved from the drag.
+      top += event.dy;
+      left += event.dx;
+
+       // Set the new positions to the element.
+      consoleWindow.style.top = top + 'px';
+      consoleWindow.style.left = left + 'px';
+    }
+  }
+});
+
 
 // =============================
 // Clock Section
