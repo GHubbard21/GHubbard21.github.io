@@ -23,7 +23,7 @@ setInterval(loadDots, 500);
 
 
 // =============================
-// Open/ Close Windows Section
+// Open / Close Windows Section
 // =============================
 
 function toggelWindow(id) {
