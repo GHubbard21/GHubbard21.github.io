@@ -1,4 +1,46 @@
 // =============================
+// Loading Screen Section
+// =============================
+
+const dots = document.getElementById("dots");
+
+let numDots = 0;
+
+function loadDots() {
+    numDots++;
+    if(numDots > 3){
+        numDots = 0;
+    }
+    dots.textContent = ".".repeat(numDots);
+}
+setInterval(loadDots, 500);
+
+
+function startLoadingBar() {
+    var bar = document.getElementById("loadingBar");
+
+    var width = 0;
+
+    var interval = setInterval(function () {
+        if (width >= 100) {
+          clearInterval(interval);
+          
+          setTimeout(function () {
+            document.getElementById("loadingScreen").style.display = "none";
+          }, 500);
+        } 
+        else {
+          width = width + 1; 
+          bar.style.width = width + "%"; 
+        }
+    }, 30); 
+}
+
+startLoadingBar();
+
+   
+
+// =============================
 // Open / Close Card Section
 // =============================
 
@@ -55,8 +97,9 @@ clockUpdate();
 
 function login() {
     
+  setTimeout(function() {
     window.location.href = "home.html";
-
+  }, 3000);
 }
 
 function denyLogin() {
