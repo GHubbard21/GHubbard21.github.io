@@ -32,6 +32,7 @@
 
         </div>
 
+        <!-- Guest Login Card-->
         <div id="guest" class="loginCard">
             <button class="closeButton" onclick="closeCard('guest')">X</button>
             <img src="https://img.icons8.com/isometric/75/guest-male.png"/>
@@ -40,16 +41,21 @@
             <button class="loginButton" onclick="login()">Login</button>
         </div>
 
-
-
+         <!-- Admin Login Card-->
          <div id="admin" class="loginCard">
             <button class="closeButton" onclick="closeCard('admin')">X</button>
             <img src="https://img.icons8.com/isometric/75/administrator-male.png"/>
             <h2>Admin</h2>
             <input type="password" placeholder="Enter Password" />
-            <button class="loginButton" onclick="login()">Login</button>
+            <button class="loginButton" onclick="denyLogin()">Login</button>
         </div>
 
+        <!-- Deny Admin Login Popup-->
+        <div id="denyPop" class="popup">
+            <p>ACCESS DENIED</p>
+            <p>Restricted</p>
+            <button class="okButton" onclick="closePopUp()">OK</button>
+        </div>
 
         <div id="clock"></div>
 

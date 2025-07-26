@@ -77,8 +77,9 @@ img {
 .loginCard {
     display: none; /* Hidden by default */
     position: fixed;
-    top: 20%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 400px;
     width: 300px;
     background: #b4b4b8;
@@ -120,7 +121,12 @@ img {
     outline: none;
 }
 
+input {
+    font-family: "Press Start 2P", system-ui;
+}
+
 .loginButton {
+    font-family: "Press Start 2P", system-ui;
     background: #1231a2;
     color: white;
     padding: 10px;
@@ -158,6 +164,26 @@ img {
     line-height: 2;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #b00020;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px #48494b;
+    text-align: center;
+    z-index: 200;
+}
 
-
-
+.okButton {
+    font-family: "Press Start 2P", system-ui;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font: optional;
+}

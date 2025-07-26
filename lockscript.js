@@ -56,9 +56,13 @@ clockUpdate();
 function login() {
     
     window.location.href = "home.html";
-    
-   /** 
-   setTimeout(function() {
-        window.location.href = "home.html"; // Redirect after delay
-    }, 1000); */
+
+}
+
+function denyLogin() {
+    document.getElementById('denyPop').style.display = 'block';
+}
+
+function closePopUp() {
+     document.getElementById('denyPop').style.display = 'none';
 }
