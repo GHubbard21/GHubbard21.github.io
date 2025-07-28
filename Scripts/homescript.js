@@ -49,9 +49,26 @@ const input = document.getElementById("input");
 const output = document.getElementById("output");
 
 const consoleCommands = {
-    help: "jim",
-    about: "jim",
-    games: "jim"
+    about: "Opening About Folder",
+    socials: "Opening Socials",
+    date: new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  }),
+    hack: "hacking...",
+    logout: "logging out...",
+    clear: "",
+    help: `Available commands:
+    - about
+    - socials
+    - date
+    - logout
+    - clear
+    - help`
 }
 
 /**
@@ -68,6 +85,28 @@ function handleCommand(cmd) {
     output.innerHTML = "";
     return;
   }
+
+  if (command == "about") {
+    setTimeout(function() {
+       document.getElementById("aboutWindow").style.display = "block";
+      }, 1000);
+  }
+
+    if (command == "socials") {
+    setTimeout(function() {
+       document.getElementById("socialsWindow").style.display = "block";
+      }, 1000);
+  }
+
+    if (command == "hack") {
+    }
+
+    if (command == "logout") {
+      setTimeout(function() {
+      window.location.href = "lockscreen.html";
+      }, 1000);
+    }
+
   // Set response to the response that corresponds with the command.
   let response = consoleCommands[command];
 
