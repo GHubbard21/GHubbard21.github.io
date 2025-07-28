@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 100vh;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #081d85, #1231a2, #4F73F5, #6babeb);
@@ -191,6 +191,7 @@ input {
     padding: 8px 12px;
     border-radius: 50%;
     cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
 }
 
 

@@ -21,23 +21,26 @@ function startLoadingBar() {
 
     var width = 0;
 
-    var interval = setInterval(function () {
-        if (width >= 100) {
-          clearInterval(interval);
+    var interval = setInterval(loadBar, 30);
+
+    function loadBar() {
+      if (width >= 100) {
+        clearInterval(interval);
           
-          setTimeout(function () {
-            document.getElementById("loadingScreen").style.display = "none";
-          }, 500);
-        } 
-        else {
-          width = width + 1; 
-          bar.style.width = width + "%"; 
-        }
-    }, 30); 
-}
+        setTimeout(hideScreen, 500);
+      }
+      else {
+        width++;
+        bar.style.width = width + '%';
+      }
 
-startLoadingBar();
+      function hideScreen() {
+        document.getElementById('loadingScreen').style.display = 'none';
+      }
+    }
+  }
 
+ startLoadingBar();
    
 
 // =============================
@@ -99,7 +102,7 @@ function login() {
     
   setTimeout(function() {
     window.location.href = "home.html";
-  }, 3000);
+  }, 1500);
 }
 
 function denyLogin() {

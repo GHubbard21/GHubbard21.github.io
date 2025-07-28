@@ -5,7 +5,19 @@ body{
     width: 100%;
     font-family: "Press Start 2P", system-ui;
     overflow: hidden;
+    /**
+    background: linear-gradient(135deg, #081d85, #1231a2, #4F73F5, #6babeb);
+    background-size: 400% 400%;
+    animation: gradientAnim 10s ease-in infinite;
+    */
 }
+
+@keyframes gradientAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
@@ -45,7 +57,7 @@ li a:visited{
 #desktop{
     height: 100vh;
     width: 100vw;
-    background: #6babeb;
+    background: #6babeb; 
 }
 
 #folders{
