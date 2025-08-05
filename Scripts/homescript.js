@@ -194,6 +194,23 @@ function changeFont(font) {
 
 function changeBarColor(color) {
   document.getElementById('taskbar').style.backgroundColor = color;
+/** 
+ * CODE I DONT UNDERSTAND, BUT IT WORKS. CHANGES THE START BUTTON COLOR 
+ * TO A COLOR OFFSET FROM THE TASKBAR.
+ 
+  taskbar.style.backgroundColor = color;
+
+  // Get computed RGB values
+  const rgb = window.getComputedStyle(taskbar).backgroundColor;
+  const [r, g, b] = rgb.match(/\d+/g).map(Number);
+
+  // Darken color by subtracting a small value (clamp to 0)
+  const darker = (v) => Math.max(0, v - 30);
+  const darkerColor = `rgb(${darker(r)}, ${darker(g)}, ${darker(b)})`;
+
+  // Apply to start button
+  document.getElementById('start').style.backgroundColor = darkerColor;
+  */
 }
 
 // =============================
