@@ -7,7 +7,12 @@
 // Open / Close Windows Section
 // =============================
 
-function toggelWindow(id) {
+/**
+ * toggleWindow function.
+ * Toggles the display of the window based on the id.
+ * 
+ */
+function toggleWindow(id) {
   const folderWindow = document.getElementById(id);
   
   if (folderWindow.style.display === "block") {
@@ -18,22 +23,15 @@ function toggelWindow(id) {
   }
 }
 
-function openWindow(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function closeWindow(id) {
-  document.getElementById(id).style.display = "none";
-}
-
 
 // =============================
 // Console Section
 // =============================
-function closeConsole(id) {
-  document.getElementById(id).style.display = "none";
-}
 
+/**
+ * toggleConsole function.
+ * Toggles the display of the console window based on the id.
+ */
 function toggleConsole(id) {
   const consoleWindow = document.getElementById(id);
   
@@ -45,9 +43,16 @@ function toggleConsole(id) {
   }
 }
 
+/**
+ * Get the input and output ID's from home.html and set them to new consts.
+ */
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 
+/**
+ * Array of commands that the user can input in the console.
+ * Each command has a response paired with it.
+ */
 const consoleCommands = {
     about: "Opening About Folder",
     socials: "Opening Socials",
@@ -75,7 +80,6 @@ const consoleCommands = {
  * handleCommand function.
  * Only runs when a command is entered.
  */
-
 function handleCommand(cmd) {
   // Set the given command to lowercase and remove extra spaces if pressed.
   const command = cmd.toLowerCase().trim();
@@ -86,26 +90,26 @@ function handleCommand(cmd) {
     return;
   }
 
+  // Opens the About window after 1 second.
   if (command == "about") {
     setTimeout(function() {
        document.getElementById("aboutWindow").style.display = "block";
       }, 1000);
   }
 
-    if (command == "socials") {
+  // Opens the Socials window after 1 second.
+  if (command == "socials") {
     setTimeout(function() {
-       document.getElementById("socialsWindow").style.display = "block";
-      }, 1000);
+      document.getElementById("socialsWindow").style.display = "block";
+    }, 1000);
   }
-
-    if (command == "hack") {
-    }
-
-    if (command == "logout") {
-      setTimeout(function() {
+  
+  // Logs out the user, sending them back to index.html after 1 second
+  if (command == "logout") {
+    setTimeout(function() {
       window.location.href = "lockscreen.html";
-      }, 1000);
-    }
+    }, 1000);
+  }
 
   // Set response to the response that corresponds with the command.
   let response = consoleCommands[command];
@@ -136,12 +140,14 @@ input.addEventListener('keydown', function (e) {
 });
 
 
-
-
 // =============================
 // Open Modals Section
 // =============================
 
+/**
+ * setupArtModal function.
+ * 
+ */
 function setupArtModal() {
   const thumbnails = document.querySelectorAll('.thumbnail');
   const modal = document.getElementById('artModal');
@@ -179,10 +185,19 @@ window.onload = function() {
 // =============================
 // Settings Section
 // =============================
+
+/**
+ * changeBackgroundColor function.
+ * Changes the background color of the desktop to what the user selects.
+ */
 function changeBackgroundColor(color) {
   document.getElementById('desktop').style.backgroundColor = color;
 }
 
+/**
+ * changeFont function.
+ * Changes the font to what the user selects.
+ */
 function changeFont(font) {
   if (font === "default") {
     document.body.style.fontFamily = ""; 
@@ -192,8 +207,14 @@ function changeFont(font) {
   }
 }
 
+
+/**
+ * changeBarColor function.
+ * Changes the color of the taskbar to what the user selects.
+ */
 function changeBarColor(color) {
   document.getElementById('taskbar').style.backgroundColor = color;
+
 /** 
  * CODE I DONT UNDERSTAND, BUT IT WORKS. CHANGES THE START BUTTON COLOR 
  * TO A COLOR OFFSET FROM THE TASKBAR.
@@ -302,6 +323,11 @@ function toggleTime() {
   clockUpdate();
 }
 
+
+/**
+ * clockUpdate function that displays the current day and time.
+ * Updates the clock every second.
+ */
 function clockUpdate(){
     let time = new Date();
 
@@ -325,35 +351,56 @@ clockUpdate();
 // Right Click Menu Section
 // =============================
 
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-
+/**
+ * openMenu function.
+ * Opens the context menu at the position of the mouse click.
+ */
+function openMenu(e) {
+  e.preventDefault(); // stop default right-click
   const menu = document.getElementById("rightClickMenu");
-
   menu.style.top = e.clientY + "px";
   menu.style.left = e.clientX + "px";
   menu.style.display = "block";
-});
+}
 
+/**
+ * closeMenu function.
+ * Closes the context menu when clicking anywhere else on the screen.
+ */
+function closeMenu() {
+  const menu = document.getElementById("rightClickMenu");
+  menu.style.display = "none";
+}
 
-document.addEventListener("click", function () {
-  document.getElementById("rightClickMenu").style.display = "none";
-});
+// Attach events
+document.addEventListener("contextmenu", openMenu);
+document.addEventListener("click", closeMenu);
 
 // =============================
 // Notepad Section
 // =============================
 
+/**
+ * saveNote function.
+ * Saves the note to local storage.
+ */
 function saveNote() {
   const newNote = document.getElementById("notepadText").value;
 
 }
 
+/**
+ * clearNote function.
+ * Clears the note in the notepad.
+ */
 function clearNote() {
   document.getElementById("notepadText").value = "";
 }
 
-
+/**
+ * downloadNote function.
+ * Downloads the note as a text file.
+ */
 function downloadNote() {
 
 }

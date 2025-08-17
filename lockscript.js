@@ -1,11 +1,23 @@
 // =============================
+// lockscreen.html Script  ===> WILL BECOME SCRIPT FOR INDEX.HTML
+// =============================
+
+
+
+// =============================
 // Loading Screen Section
 // =============================
+
 
 const dots = document.getElementById("dots");
 
 let numDots = 0;
 
+/**
+ * loadDots function that starts the dots Animation.
+ * 3 dots appear one by one and then disappear.
+ * Starts on load of the page.
+ */
 function loadDots() {
     numDots++;
     if(numDots > 3){
@@ -15,7 +27,11 @@ function loadDots() {
 }
 setInterval(loadDots, 500);
 
-
+/**
+ * starLoadingBar functuion that starts Loading Bar Animation.
+ * The bar fills up over 3 seconds, then the loading screen fades out.
+ * Starts on load of the page.
+ */
 function startLoadingBar() {
     var bar = document.getElementById("loadingBar");
 
@@ -47,6 +63,10 @@ function startLoadingBar() {
 // Open / Close Card Section
 // =============================
 
+/**
+ * toggleCard function that the Account Card.
+ * Opens depending on id of selected account.
+ */
 function toggleCard(id) {
   const card = document.getElementById(id);
 
@@ -57,15 +77,6 @@ function toggleCard(id) {
     card.style.display = "flex"; 
   }
 }
-
-function openCard(id) {
-  document.getElementById(id).style.display = "flex";
-}
-
-function closeCard(id) {
-  document.getElementById(id).style.display = "none";
-}
-
 
 // =============================
 // Clock Section
@@ -79,6 +90,10 @@ function toggleTime() {
   clockUpdate();
 }
 
+/**
+ * clockUpdate function that displays the current day and time.
+ * Updates the clock every minute.
+ */
 function clockUpdate(){
     let time = new Date();
 
@@ -98,17 +113,31 @@ setInterval(clockUpdate, 1000);
 clockUpdate();
 
 
+
+// =============================
+// Login Section
+// =============================
+
+
+/**
+ * login function that redirects to home.html after 1.5 seconds.
+ */
 function login() {
-    
   setTimeout(function() {
     window.location.href = "home.html";
   }, 1500);
 }
 
+/**
+ * denyLogin function that displays the popup restricing access.
+ */
 function denyLogin() {
     document.getElementById('denyPop').style.display = 'block';
 }
 
+/**
+ * closePopUp function that closes the popup. when the x is clicked.
+ */
 function closePopUp() {
      document.getElementById('denyPop').style.display = 'none';
 }

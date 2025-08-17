@@ -1,3 +1,4 @@
+/* Body Style */
 body{   
     margin: 0;
     padding: 0;
@@ -12,19 +13,21 @@ body{
     */
 }
 
+/* Animation BG just in case it gets implemented above */
 @keyframes gradientAnim {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-
+/* Font */
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: normal;
   font-style: normal;
 }
 
+/* Generic stuff. H1, H3, a, li, ul*/
 h1{
     color:#1231a2;  
 }
@@ -53,13 +56,14 @@ li a:visited{
     text-decoration: none;
 }
 
-
+/* Desktop BG styles */
 #desktop{
     height: 100vh;
     width: 100vw;
     background: #6babeb; 
 }
 
+/* Folders Styles*/
 #folders{
     top: 50px;
     left: 250px;
@@ -80,6 +84,7 @@ li a:visited{
     transform: scale(1.05);
 }
 
+/* App Styles*/
 #applications{
     top: 50px;
     left: 25px;
@@ -102,6 +107,7 @@ li a:visited{
     transform: scale(1.05);
 }
 
+/* Popup Windows */
 #aboutWindow{
     top: 150px;
     left: 150px;
@@ -161,14 +167,14 @@ li a:visited{
 }
 
 #notesWindow{
-    top: 400px;
+    top: 300px;
     left: 200px;
     width: 400px;
     height: 400px;
 }
 
 #socialsWindow{
-    top: 450px;
+    top: 350px;
     left: 200px;
 }
 
@@ -215,6 +221,7 @@ li a:visited{
     padding: 10px;
 }
 
+/* Taskbar Styles */ 
 #taskbar{
     position: absolute;
     bottom: 0;
@@ -244,6 +251,7 @@ li a:visited{
     padding: 0 20px;
 }
 
+/* Console Styles */
 .console{
     position: absolute;
     top: 400px;
@@ -312,7 +320,7 @@ li a:visited{
     font-size: 16px;
     margin-right: 8px;
 }
-
+/* Winodw Grid display Style*/
 #grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -341,6 +349,7 @@ li a:visited{
   transform: scale(1.05);
 }
 
+/* Modal Popout styles */
 .modal {
     display: none;
     position: fixed;
@@ -378,6 +387,7 @@ li a:visited{
     cursor: pointer;
 }
 
+/* Right Click Menu Style */
 #rightClickMenu {
   position: absolute;
   display: none;
@@ -402,7 +412,7 @@ li a:visited{
   background-color: #cfcfcf;
 }
 
-
+/* Notes Window and styles */
 #notesWindow .windowContent{
     background-color: #dbc9a6;
 }

@@ -19,43 +19,44 @@
         <div id="folders">
 
           <!--About Folder-->
-          <div id="folder" onclick="toggelWindow('aboutWindow')">
+          <div id="folder" onclick="toggleWindow('aboutWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>About</h3>
           </div>
 
           <!--Games Folder-->
-          <div id="folder" onclick="toggelWindow('gamesWindow')">
+          <div id="folder" onclick="toggleWindow('gamesWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Games</h3>
           </div>
 
           <!--Web Dev Folder-->
-          <div id="folder" onclick="toggelWindow('webWindow')">
+          <div id="folder" onclick="toggleWindow('webWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Web Dev</h3>
           </div>
 
           <!--Art Folder-->
-          <div id="folder" onclick="toggelWindow('artWindow')">
+          <div id="folder" onclick="toggleWindow('artWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Art</h3>
           </div>
 
           <!--Resume Folder-->
-          <div id="folder" onclick="toggelWindow('resumeWindow')">
+          <div id="folder" onclick="toggleWindow('resumeWindow')">
             <img src="https://img.icons8.com/isometric/75/folder-invoices.png"/>
             <h3>Resume</h3>
           </div>
 
         </div>
 
-         <!--Openable Windows Div-->
+         <!--Openable Windows Divs-->
+
          <!--About Me Window-->
         <div id="aboutWindow" class="windows">
           <div class="title">
             <span>About</span>
-            <button onclick="closeWindow('aboutWindow')"> X </button>
+            <button onclick="toggleWindow('aboutWindow')"> X </button>
           </div>
 
           <div class="windowContent">
@@ -69,9 +70,9 @@
         <div id="gamesWindow" class="windows">
           <div class="title">
             <span>Games, Games, Games</span>
-            <button onclick="closeWindow('gamesWindow')"> X </button>
+            <button onclick="toggleWindow('gamesWindow')"> X </button>
           </div>
-
+          <!--Games Grid-->
           <div class="windowContent">
             <div id="grid">
               <a href="https://dripgodmod.itch.io/zombie-carnage" target="_blank">
@@ -106,9 +107,9 @@
         <div id="webWindow" class="windows">
           <div class="title">
             <span>Web Projects, Games, Apps</span>
-            <button onclick="closeWindow('webWindow')"> X </button>
+            <button onclick="toggleWindow('webWindow')"> X </button>
           </div>
-
+          <!--Web Projects Grid-->
           <div class="windowContent">
              <div id="grid">
                 <a href="WebDevProjects/Snake Password/" target="_blank">
@@ -143,9 +144,9 @@
         <div id="artWindow" class="windows">
           <div class="title">
             <span>Images, Animations, Videos</span>
-            <button onclick="closeWindow('artWindow')"> X </button>
+            <button onclick="toggleWindow('artWindow')"> X </button>
           </div>
-
+          <!--Art Grid-->
           <div class="windowContent">
             <div id="grid">
               <img src="Assets/loveme.png" class="thumbnail" data-title="love me">
@@ -161,6 +162,7 @@
           </div>
         </div>  
 
+        <!--Art Modal-->
         <div id="artModal" class="modal">
           <span class="close" onclick="closeModal()"> X </span>
           <img class="modal-content" id="modalImage">
@@ -171,9 +173,9 @@
         <div id="resumeWindow" class="windows">
           <div class="title">
             <span>Resume</span>
-            <button onclick="closeWindow('resumeWindow')"> X </button>
+            <button onclick="toggleWindow('resumeWindow')"> X </button>
           </div>
-
+          <!--Resume Content-->
           <div class="windowContent">
             <br>
             <a href="Assets/Grady_Hubbard_2025Resume.pdf" target="_blank"> Resume</a> 
@@ -187,9 +189,9 @@
         <div id="trashWindow" class="windows">
           <div class="title">
             <span>Garbage</span>
-            <button onclick="closeWindow('trashWindow')"> X </button>
+            <button onclick="toggleWindow('trashWindow')"> X </button>
           </div>
-
+          <!--Trash Grid-->
           <div class="windowContent">
             <div id="grid">
               <a href="https://icons8.com/" target="_blank">
@@ -202,12 +204,10 @@
               <p>Deleted Selfies</p>
               </a>
 
-
               <a href="">
               <img src="https://img.icons8.com/isometric/75/code-file.png"/>
               <p>Worst Code Ever</p>
               </a>
-
 
               <a href="">
               <img src="https://img.icons8.com/isometric/75/controller.png"/>
@@ -224,9 +224,6 @@
               <p>Credits</p>
               </a>
 
-
-
-
             </div>
           </div>
         </div>
@@ -235,9 +232,9 @@
         <div id="settingsWindow" class="windows">
           <div class="title">
             <span>Options</span>
-            <button onclick="closeWindow('settingsWindow')"> X </button>
+            <button onclick="toggleWindow('settingsWindow')"> X </button>
           </div>
-
+          <!--Settings Content-->
           <div class="windowContent">
             <!-- 
             <div class="settings">
@@ -247,16 +244,17 @@
            -->
 
           <!--  <input type="file" onchange="changeBackgroundImage(image)"> --> 
+            <!--Background Color Picker-->
             <div class="settings">
               <p>Background Color</p>
               <input type="color" id="bgPicker" value="#6babeb" onchange="changeBackgroundColor(this.value)">
             </div>
-
+            <!--Task Bar Color Picker-->
             <div class="settings">
               <p>Task Bar Color</p>
               <input type="color" id="barPicker" value="#4F73F5" onchange="changeBarColor(this.value)">
             </div>
-
+            <!--Font Selection-->
             <div class="settings">
               <p>Font Selection</p>
               <select onchange="changeFont(this.value)">
@@ -266,7 +264,7 @@
                 <option value="monospace">Monospace</option>
             </select>
             </div>
-           
+            <!--Time Format-->
             <div class="settings">
               <p>Time Change</p>
               <button onclick="toggleTime()"> 12H / 24H</button>
@@ -278,7 +276,7 @@
                <input type="range">
             </div>
            -->
-
+            <!-- 
             <div class="settings">
               <p>Language</p>
               <select onchange="">
@@ -288,13 +286,12 @@
                 <option value="">h4Ck3R</option>
             </select>
             </div>
-            
+            -->
 
           </div>
         </div>
 
-
-      <!--Play Window-->
+      <!--Play Window
         <div id="playWindow" class="windows">
           <div class="title">
             <span>Play</span>
@@ -304,14 +301,15 @@
           <div class="windowContent">
           </div>
         </div>
+        -->
 
       <!--Notepad Window-->
         <div id="notesWindow" class="windows">
           <div class="title">
             <span>Notepad</span>
-            <button onclick="closeWindow('notesWindow')"> X </button>
+            <button onclick="toggleWindow('notesWindow')"> X </button>
           </div>
-
+          <!--Notepad Content-->
           <div class="windowContent">
             <div class="notepad">
                   <button onclick="saveNote()">Save</button>
@@ -321,10 +319,6 @@
                   <br>
                   <textarea id="notepadText"></textarea> 
             </div>
-            
-
-
-
           </div>
         </div>
 
@@ -332,11 +326,11 @@
       <div id="socialsWindow" class="windows">
           <div class="title">
             <span>Socials</span>
-            <button onclick="closeWindow('socialsWindow')"> X </button>
+            <button onclick="toggleWindow('socialsWindow')"> X </button>
           </div>
 
+          <!--Socials Content-->
         <div class="windowContent">
-
           <div class="socialSettings">
             <span>Email</span>
             <a href="mailto:g21@tomhub.com" target="_blank">
@@ -371,20 +365,6 @@
               <img src="https://img.icons8.com/isometric/50/twitter.png"/>
             </a>
           </div>
-           
-
-            
-              
-           
-           
-            
-             
-            
-            
-           
-             
-            
-         
         </div>
       </div>  
         
@@ -392,31 +372,31 @@
         <div id="applications">
 
           <!--Trash App-->
-          <div id="app" onclick="toggelWindow('trashWindow')">
+          <div id="app" onclick="toggleWindow('trashWindow')">
             <img src="https://img.icons8.com/isometric/75/filled-trash.png"/>
             <h3>Garbage</h3>
           </div>
 
           <!--Settings App-->
-           <div id="app" onclick="toggelWindow('settingsWindow')">
+           <div id="app" onclick="toggleWindow('settingsWindow')">
             <img src="https://img.icons8.com/isometric/75/settings.png"/>
             <h3>Options</h3>
           </div>
 <!-- 
           Play App
-           <div id="app" onclick="toggelWindow('playWindow')">
+           <div id="app" onclick="toggleWindow('playWindow')">
             <img src="https://img.icons8.com/isometric/75/controller.png"/>
             <h3>Play</h3>
           </div>
 -->
           <!--Notepad App-->
-           <div id="app" onclick="toggelWindow('notesWindow')">
+           <div id="app" onclick="toggleWindow('notesWindow')">
             <img src="https://img.icons8.com/isometric/75/test-passed.png"/>
             <h3>Notepad</h3>
           </div>
 
           <!--Socials App-->
-          <div id="app" onclick="toggelWindow('socialsWindow')">
+          <div id="app" onclick="toggleWindow('socialsWindow')">
             <img src="https://img.icons8.com/isometric/75/myspace.png"/>
             <h3>Socials</h3>
           </div>
@@ -429,13 +409,13 @@
         <div id="clock"></div> 
       </div>
 
-      <!-- Console Div-->
+      <!--Console Div-->
       <div id="consoleWindow" class="console">
           <div class="consoleTitle">
             <span>gShell</span>
-            <button onclick="closeConsole('consoleWindow')"> X </button>
+            <button onclick="toggleConsole('consoleWindow')"> X </button>
           </div>
-
+          <!--gShell Content-->
           <div class="consoleContent">
 
              <p>gshell [Version 1.0]. All rights reserved.</p>
@@ -464,9 +444,10 @@
           </ul>
         
 
-
+      <!--Link to Interact.js-->
       <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 
+      <!--Link to homescript.js-->
       <script src="Scripts/homescript.js"> </script>
 
     </body>

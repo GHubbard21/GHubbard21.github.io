@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Locked</title>
         <link rel="stylesheet" href="lockstyles.css">
-         <link rel="icon" href="https://img.icons8.com/isometric/50/lock.png  " type="image/icon type">
+        <link rel="icon" href="https://img.icons8.com/isometric/50/lock.png  " type="image/icon type">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
     <body>
-
 
         <!--Loading Screen Div-->
         <div id="loadingScreen">
@@ -23,53 +22,52 @@
              </div>
         </div>
     
-        <!--Account Div-->
+        <!--Accounts Div-->
         <div class="accountContainer">
-            <!-- Guest Account-->
+            <!--Guest Account-->
             <div class="account" onclick="toggleCard('guest')"> 
                 <span class="dot"></span>
                 <img src="https://img.icons8.com/isometric/75/guest-male.png"/>
                 <h2>Guest</h2>
             </div>
 
-            <!-- Admin Account-->
+            <!--Admin Account-->
             <div class="account" onclick="toggleCard('admin')"> 
                 <span class="dot"></span>
                 <img src="https://img.icons8.com/isometric/75/administrator-male.png"/>
                 <h2>Admin</h2>
             </div>
-
         </div>
 
-        <!-- Guest Login Card-->
+        <!--Guest Login Card-->
         <div id="guest" class="loginCard">
-            <button class="closeButton" onclick="closeCard('guest')">X</button>
+            <button class="closeButton" onclick="toggleCard('guest')">X</button>
             <img src="https://img.icons8.com/isometric/75/guest-male.png"/>
             <h2>Guest</h2>
             <input type="password" placeholder="Enter Password" />
             <button class="loginButton" onclick="login()">Login</button>
         </div>
 
-         <!-- Admin Login Card-->
+         <!--Admin Login Card-->
          <div id="admin" class="loginCard">
-            <button class="closeButton" onclick="closeCard('admin')">X</button>
+            <button class="closeButton" onclick="toggleCard('admin')">X</button>
             <img src="https://img.icons8.com/isometric/75/administrator-male.png"/>
             <h2>Admin</h2>
             <input type="password" placeholder="Enter Password" />
             <button class="loginButton" onclick="denyLogin()">Login</button>
         </div>
 
-        <!-- Deny Admin Login Popup-->
+        <!--Deny Admin Login Popup-->
         <div id="denyPop" class="popup">
             <p>ACCESS DENIED</p>
             <p>Restricted</p>
             <button class="okButton" onclick="closePopUp()">OK</button>
         </div>
 
+        <!--Clock Div -->
         <div id="clock"></div>
 
-    
-
+        <!--Link to Lockscript.js-->
         <script src="lockscript.js"> </script>
 
     </body>

@@ -1,3 +1,4 @@
+/* Body Style */
 body{
     margin: 0;
     height: 100vh;
@@ -13,19 +14,21 @@ body{
     font-family: "Press Start 2P", system-ui;
 }
 
+/* Font */
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: normal;
   font-style: normal;
 }
 
+/* Background Animation */
 @keyframes gradientAnim {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-
+/* Loading Screen Styles */
 #loadingScreen{
     position: fixed;
     top: 0px;
@@ -58,7 +61,7 @@ body{
   transition: width 0.2s;
 }
 
-
+/* Loading Screen Fade Animation */
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -67,11 +70,11 @@ body{
 }
 
 
+/* Accounts Style */
 .accountContainer {
     display: flex;
     gap: 200px; 
 }
-
 
 .account {
     display: flex;
@@ -85,7 +88,7 @@ body{
     transform: scale(1.05);
 }
 
-
+/* There is a transparent dot behind each Account Icon. */
 .dot {
     width: 150px;
     height: 150px;
@@ -97,7 +100,7 @@ body{
     z-index: 1;
 }
 
-
+/* Account Icon Image when opened up */
 img {
     position: relative;
     z-index: 2;
@@ -113,9 +116,9 @@ img {
 
 }
 
-
+/* Login Card Style */
 .loginCard {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -161,10 +164,12 @@ img {
     outline: none;
 }
 
+/* Input Font */
 input {
     font-family: "Press Start 2P", system-ui;
 }
 
+/* Login Button */
 .loginButton {
     font-family: "Press Start 2P", system-ui;
     background: #1231a2;
@@ -181,6 +186,7 @@ input {
     background: #081d85;
 }
 
+/* X Button */
 .closeButton {
     position: absolute;
     right: 15px;
@@ -194,7 +200,7 @@ input {
     font-family: "Press Start 2P", system-ui;
 }
 
-
+/* Clock */
 #clock {
     position: fixed;
     bottom: 20px;
@@ -205,6 +211,7 @@ input {
     line-height: 2;
 }
 
+/* Deny Popup */
 .popup {
     display: none;
     position: fixed;
@@ -221,6 +228,7 @@ input {
     z-index: 200;
 }
 
+/* Ok Button Style */
 .okButton {
     font-family: "Press Start 2P", system-ui;
     padding: 10px;
