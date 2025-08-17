@@ -372,7 +372,7 @@ function closeMenu() {
   menu.style.display = "none";
 }
 
-// Attach events
+// Attach events to the functions.
 document.addEventListener("contextmenu", openMenu);
 document.addEventListener("click", closeMenu);
 
