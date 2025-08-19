@@ -6,6 +6,7 @@ Visit here https://ghubbard21.xyz/
 
 # Preview
 
+** THERE IS NO PASSWORD FOR THE GUEST ACCOUNT. WHATEVER YOU TYPE WILL "LOG" YOU IN **
 
 https://github.com/user-attachments/assets/25ebca0f-3d09-408e-8b2d-848bfb4520d5
 
